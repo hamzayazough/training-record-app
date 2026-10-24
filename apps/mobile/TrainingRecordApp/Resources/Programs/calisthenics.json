@@ -1,0 +1,2661 @@
+{
+  "programType": "CALISTHENICS",
+  "title": "12-Week Weighted Calisthenics",
+  "totalWeeks": 12,
+  "defaultWeekdayByDayNumber": {
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "THURSDAY",
+    "4": "SATURDAY"
+  },
+  "blocks": [
+    {
+      "id": "FULL_PROGRAM",
+      "name": "Full program",
+      "weekStart": 1,
+      "weekEnd": 12
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+105 lb",
+              "setsReps": "4 x 4",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +105 lb \u2014 4 x 4 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+70 lb",
+              "setsReps": "2 x 6",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +70 lb \u2014 2 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+45 lb",
+              "setsReps": "4 x 4",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +45 lb \u2014 4 x 4 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+55 lb",
+              "setsReps": "4 x 8",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +55 lb \u2014 4 x 8 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+110 lb",
+              "setsReps": "4 x 4",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +110 lb \u2014 4 x 4 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+75 lb",
+              "setsReps": "2 x 6",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +75 lb \u2014 2 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+50 lb",
+              "setsReps": "4 x 4",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +50 lb \u2014 4 x 4 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+60 lb",
+              "setsReps": "4 x 8",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +60 lb \u2014 4 x 8 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+115 lb",
+              "setsReps": "4 x 4",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +115 lb \u2014 4 x 4 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+80 lb",
+              "setsReps": "2 x 6",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +80 lb \u2014 2 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+55 lb",
+              "setsReps": "4 x 4",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +55 lb \u2014 4 x 4 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+65 lb",
+              "setsReps": "4 x 8",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +65 lb \u2014 4 x 8 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+90 lb",
+              "setsReps": "3 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +90 lb \u2014 3 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+45 lb",
+              "setsReps": "2 x 5",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +45 lb \u2014 2 x 5 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+35 lb",
+              "setsReps": "3 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +35 lb \u2014 3 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+45 lb",
+              "setsReps": "3 x 6",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +45 lb \u2014 3 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 2",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 3 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "1 x 8",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 1 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 3 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 2 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "2 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 2 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+120 lb",
+              "setsReps": "4 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +120 lb \u2014 4 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+85 lb",
+              "setsReps": "2 x 5",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +85 lb \u2014 2 x 5 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+60 lb",
+              "setsReps": "4 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +60 lb \u2014 4 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+75 lb",
+              "setsReps": "4 x 6",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +75 lb \u2014 4 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+125 lb",
+              "setsReps": "4 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +125 lb \u2014 4 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+90 lb",
+              "setsReps": "2 x 5",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +90 lb \u2014 2 x 5 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+65 lb",
+              "setsReps": "4 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +65 lb \u2014 4 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+80 lb",
+              "setsReps": "4 x 6",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +80 lb \u2014 4 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+130 lb",
+              "setsReps": "4 x 2",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +130 lb \u2014 4 x 2 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+95 lb",
+              "setsReps": "2 x 4",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +95 lb \u2014 2 x 4 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+70 lb",
+              "setsReps": "4 x 2",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +70 lb \u2014 4 x 2 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+85 lb",
+              "setsReps": "4 x 6",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +85 lb \u2014 4 x 6 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 12",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 3 x 12 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "3 x 10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 3 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+95 lb",
+              "setsReps": "3 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted dips \u2014 +95 lb \u2014 3 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+55 lb",
+              "setsReps": "2 x 5",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +55 lb \u2014 2 x 5 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 8",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 3 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+45 lb",
+              "setsReps": "3 x 3",
+              "rest": "5 min",
+              "prescription": "Weighted pull-ups \u2014 +45 lb \u2014 3 x 3 \u2014 rest 5 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 5",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 3 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 8",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 3 x 8 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "3 x 8-10",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 3 x 8-10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+55 lb",
+              "setsReps": "3 x 5",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +55 lb \u2014 3 x 5 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 2",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 3 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "1 x 8",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 1 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 3 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 2 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "2 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 2 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+140 lb",
+              "setsReps": "3 x 2",
+              "rest": "6 min",
+              "prescription": "Weighted dips \u2014 +140 lb \u2014 3 x 2 \u2014 rest 6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+105 lb",
+              "setsReps": "2 x 4",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +105 lb \u2014 2 x 4 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 6",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 2 x 6 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+75 lb",
+              "setsReps": "3 x 2",
+              "rest": "6 min",
+              "prescription": "Weighted pull-ups \u2014 +75 lb \u2014 3 x 2 \u2014 rest 6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 4",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 2 x 4 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 6",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 2 x 6 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+90 lb",
+              "setsReps": "3 x 5",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +90 lb \u2014 3 x 5 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+145 lb",
+              "setsReps": "3 x 2",
+              "rest": "6 min",
+              "prescription": "Weighted dips \u2014 +145 lb \u2014 3 x 2 \u2014 rest 6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+110 lb",
+              "setsReps": "2 x 3",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +110 lb \u2014 2 x 3 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 6",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 2 x 6 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+80 lb",
+              "setsReps": "3 x 2",
+              "rest": "6 min",
+              "prescription": "Weighted pull-ups \u2014 +80 lb \u2014 3 x 2 \u2014 rest 6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 4",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 2 x 4 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 6",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 2 x 6 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+95 lb",
+              "setsReps": "3 x 4",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +95 lb \u2014 3 x 4 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "4 x 3",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 4 x 3 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 10",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 2 x 10 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "5 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 5 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "4 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 4 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "4 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 4 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 11,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "HEAVY DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+155 lb",
+              "setsReps": "2 x 1",
+              "rest": "6 min",
+              "prescription": "Weighted dips \u2014 +155 lb \u2014 2 x 1 \u2014 rest 6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Back-off dips",
+              "targetWeight": "+115 lb",
+              "setsReps": "2 x 2",
+              "rest": "3-4 min",
+              "prescription": "Back-off dips \u2014 +115 lb \u2014 2 x 2 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Pike push-ups",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 6",
+              "rest": "2 min",
+              "prescription": "Pike push-ups \u2014 Bodyweight \u2014 2 x 6 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "HEAVY PULL-UPS",
+          "exercises": [
+            {
+              "name": "Weighted pull-ups",
+              "targetWeight": "+85 lb",
+              "setsReps": "2 x 1",
+              "rest": "6 min",
+              "prescription": "Weighted pull-ups \u2014 +85 lb \u2014 2 x 1 \u2014 rest 6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 4",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 2 x 4 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 6",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 2 x 6 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "VOLUME DIPS",
+          "exercises": [
+            {
+              "name": "Weighted dips",
+              "targetWeight": "+60 lb",
+              "setsReps": "2 x 3",
+              "rest": "3-4 min",
+              "prescription": "Weighted dips \u2014 +60 lb \u2014 2 x 3 \u2014 rest 3-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "3 x 2",
+              "rest": "2 min",
+              "prescription": "Speed dips \u2014 Bodyweight \u2014 3 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Bodyweight dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "1 x 8",
+              "rest": "2 min",
+              "prescription": "Bodyweight dips \u2014 Bodyweight \u2014 1 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light/moderate \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "EXPLOSIVE PULL-UPS",
+          "exercises": [
+            {
+              "name": "High explosive pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "3 x 2",
+              "rest": "3 min",
+              "prescription": "High explosive pull-ups \u2014 BW / assisted \u2014 3 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Speed pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 2",
+              "rest": "3 min",
+              "prescription": "Speed pull-ups \u2014 BW / assisted \u2014 2 x 2 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Assisted muscle-up transitions",
+              "targetWeight": "Assisted",
+              "setsReps": "2 x 2",
+              "rest": "2 min",
+              "prescription": "Assisted muscle-up transitions \u2014 Assisted \u2014 2 x 2 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Rows",
+              "targetWeight": "Light/moderate",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Rows \u2014 Light/moderate \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 12,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "DIP 1RM TEST",
+          "exercises": [
+            {
+              "name": "Warm-up dips",
+              "targetWeight": "BW / +45 / +90 lb",
+              "setsReps": "8 / 5 / 3",
+              "rest": "2-4 min",
+              "prescription": "Warm-up dips \u2014 BW / +45 / +90 lb \u2014 8 / 5 / 3 \u2014 rest 2-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Singles",
+              "targetWeight": "+135 / +155 / +170 lb",
+              "setsReps": "1 each",
+              "rest": "5-6 min",
+              "prescription": "Singles \u2014 +135 / +155 / +170 lb \u2014 1 each \u2014 rest 5-6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Optional singles",
+              "targetWeight": "+185 / +195 / +205 lb",
+              "setsReps": "1 each IF ready",
+              "rest": "6-7 min",
+              "prescription": "Optional singles \u2014 +185 / +195 / +205 lb \u2014 1 each IF ready \u2014 rest 6-7 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "RECOVERY PULL",
+          "exercises": [
+            {
+              "name": "Controlled pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 4",
+              "rest": "3 min",
+              "prescription": "Controlled pull-ups \u2014 BW / assisted \u2014 2 x 4 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Scapular pull-ups",
+              "targetWeight": "BW / assisted",
+              "setsReps": "2 x 6",
+              "rest": "90 sec",
+              "prescription": "Scapular pull-ups \u2014 BW / assisted \u2014 2 x 6 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Light rows",
+              "targetWeight": "Light",
+              "setsReps": "2 x 8",
+              "rest": "2 min",
+              "prescription": "Light rows \u2014 Light \u2014 2 x 8 \u2014 rest 2 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "RECOVERY DIPS",
+          "exercises": [
+            {
+              "name": "Easy dips",
+              "targetWeight": "Bodyweight",
+              "setsReps": "2 x 5",
+              "rest": "3 min",
+              "prescription": "Easy dips \u2014 Bodyweight \u2014 2 x 5 \u2014 rest 3 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Triceps extensions",
+              "targetWeight": "Light",
+              "setsReps": "2 x 10",
+              "rest": "90 sec",
+              "prescription": "Triceps extensions \u2014 Light \u2014 2 x 10 \u2014 rest 90 sec",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "PULL-UP 1RM TEST",
+          "exercises": [
+            {
+              "name": "Warm-up pull-ups",
+              "targetWeight": "BW / +25 / +45 lb",
+              "setsReps": "5 / 3 / 2",
+              "rest": "2-4 min",
+              "prescription": "Warm-up pull-ups \u2014 BW / +25 / +45 lb \u2014 5 / 3 / 2 \u2014 rest 2-4 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Singles",
+              "targetWeight": "+70 / +90 / +105 lb",
+              "setsReps": "1 each IF ready",
+              "rest": "5-6 min",
+              "prescription": "Singles \u2014 +70 / +90 / +105 lb \u2014 1 each IF ready \u2014 rest 5-6 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            },
+            {
+              "name": "Optional singles",
+              "targetWeight": "+115 / +125 / +135 lb",
+              "setsReps": "1 each IF ready",
+              "rest": "6-7 min",
+              "prescription": "Optional singles \u2014 +115 / +125 / +135 lb \u2014 1 each IF ready \u2014 rest 6-7 min",
+              "metrics": [
+                "WEIGHT",
+                "REPS",
+                "SETS"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

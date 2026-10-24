@@ -9,3 +9,7 @@ DerivedData/
 *.log
 apps/api/coverage/
 apps/mobile/.build/
+apps/mobile/TrainingRecordApp/Generated/*
+!apps/mobile/TrainingRecordApp/Generated/.gitkeep
+
+

@@ -5,10 +5,14 @@ alwaysApply: true
 
 # Project Structure
 
-- `apps/mobile` — SwiftUI iOS client
-- `apps/api` — NestJS server (in-memory store + cache, no DB)
-- `packages/programs` — program seed JSON (source of truth)
+- `apps/mobile` — SwiftUI iOS client (domain logic + persistence; no Nest runtime)
+- `apps/api` — legacy NestJS server (unused at runtime; optional reference)
+- `packages/programs` — program seed JSON (source of truth; also bundled into the iOS app)
 
-Keep API and mobile models aligned. Prefer shared seed JSON over hardcoding workouts in Swift.
+Program calendar, rearrange, complete, and feedback run on-device via `ProgramStore`. Persistence is local (Application Support) and synced to Atlas DB `training-record` via MongoKitten.
+
+`MONGODB_URI` lives in gitignored `apps/mobile/.env` and is injected at build time into `Generated/MONGODB_SECRETS.swift` (also gitignored). Never commit the URI. See `docs/ATLAS_SETUP.md`.
+
+Keep mobile models aligned with seed JSON. Prefer shared seed JSON over hardcoding workouts in Swift.
 
 No comments unless a short doc comment clarifies a non-obvious function.

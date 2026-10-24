@@ -4,23 +4,22 @@ enum APIError: Error {
     case invalidURL
     case badResponse
     case decodingFailed
+    case store(Error)
 }
 
+/// Facade over on-device `ProgramStore` (+ lightweight Atlas sync). No Nest server required.
 final class TrainingAPIClient {
     static let SHARED = TrainingAPIClient()
 
-    private let session: URLSession
-    private let decoder: JSONDecoder
-    private let encoder: JSONEncoder
+    private let store: ProgramStore
 
-    init(session: URLSession = .shared) {
-        self.session = session
-        self.decoder = JSONDecoder()
-        self.encoder = JSONEncoder()
+    init(store: ProgramStore = .shared) {
+        self.store = store
     }
 
     func fetchPrograms() async throws -> [ProgramSummary] {
-        try await get("/programs")
+        try await store.ensureReady()
+        return await store.listPrograms()
     }
 
     func fetchCalendar(
@@ -28,77 +27,79 @@ final class TrainingAPIClient {
         from: String = DayRecord.todayIso(),
         days: Int = API_CONFIG.HOME_CALENDAR_DAYS
     ) async throws -> [DayRecord] {
-        try await get("/programs/\(type.rawValue)/calendar?from=\(from)&days=\(days)")
+        try await store.ensureReady()
+        return await store.getCalendar(type: type, from: from, days: days)
     }
 
     func fetchDetail(type: PROGRAM_TYPE) async throws -> [DayRecord] {
-        try await get("/programs/\(type.rawValue)/detail")
+        let from = ScheduleDateHelpers.addDays(DayRecord.todayIso(), days: -7)
+        return try await fetchCalendar(type: type, from: from, days: 29)
     }
 
     func completeExercise(id: String) async throws -> CompleteExerciseResponse {
-        try await post("/exercises/\(id)/complete", body: Optional<String>.none)
+        try await store.ensureReady()
+        do {
+            return try await store.completeExercise(id: id)
+        } catch {
+            throw APIError.store(error)
+        }
     }
 
     func submitFeedback(id: String, request: FeedbackRequest) async throws -> ScheduledExercise {
-        try await post("/exercises/\(id)/feedback", body: request)
+        try await store.ensureReady()
+        do {
+            return try await store.submitFeedback(
+                id: id,
+                status: request.status,
+                adjustments: request.adjustments
+            )
+        } catch {
+            throw APIError.store(error)
+        }
     }
 
     func moveSession(id: String, request: MoveSessionRequest) async throws -> ScheduledSession {
-        try await patch("/sessions/\(id)/move", body: request)
+        try await store.ensureReady()
+        do {
+            var targetDate = request.targetDate
+            if targetDate == nil, let weekdayRaw = request.targetWeekday?.uppercased(),
+               let weekday = WEEKDAY(rawValue: weekdayRaw) {
+                let today = DayRecord.todayIso()
+                let weekStart = ScheduleDateHelpers.startOfWeekMonday(today)
+                guard let monday = ScheduleDateHelpers.parseIso(weekStart) else {
+                    throw ProgramStoreError.sessionNotFound
+                }
+                targetDate = ScheduleDateHelpers.toIsoDate(
+                    ScheduleDateHelpers.dateForWeekdayInWeek(weekStartMonday: monday, weekday: weekday)
+                )
+            }
+            guard let targetDate else { throw ProgramStoreError.sessionNotFound }
+            return try await store.moveSession(id: id, targetDate: targetDate)
+        } catch {
+            throw APIError.store(error)
+        }
     }
 
     func fetchRearrangeLayout(type: PROGRAM_TYPE, blockId: String? = nil) async throws -> RearrangeLayout {
-        var path = "/programs/\(type.rawValue)/rearrange"
-        if let blockId, !blockId.isEmpty {
-            let encoded = blockId.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? blockId
-            path += "?blockId=\(encoded)"
+        try await store.ensureReady()
+        do {
+            return try await store.getRearrangeLayout(type: type, blockId: blockId)
+        } catch {
+            throw APIError.store(error)
         }
-        return try await get(path)
     }
 
     func saveRearrange(type: PROGRAM_TYPE, request: RearrangeRequest) async throws -> RearrangeLayout {
-        try await post("/programs/\(type.rawValue)/rearrange", body: request)
-    }
-
-    private func get<T: Decodable>(_ path: String) async throws -> T {
-        let request = try makeRequest(path: path, method: "GET")
-        return try await send(request)
-    }
-
-    private func post<Body: Encodable, T: Decodable>(_ path: String, body: Body?) async throws -> T {
-        var request = try makeRequest(path: path, method: "POST")
-        if let body {
-            request.httpBody = try encoder.encode(body)
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        }
-        return try await send(request)
-    }
-
-    private func patch<Body: Encodable, T: Decodable>(_ path: String, body: Body) async throws -> T {
-        var request = try makeRequest(path: path, method: "PATCH")
-        request.httpBody = try encoder.encode(body)
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        return try await send(request)
-    }
-
-    private func makeRequest(path: String, method: String) throws -> URLRequest {
-        guard let url = URL(string: API_CONFIG.BASE_URL + path) else {
-            throw APIError.invalidURL
-        }
-        var request = URLRequest(url: url)
-        request.httpMethod = method
-        return request
-    }
-
-    private func send<T: Decodable>(_ request: URLRequest) async throws -> T {
-        let (data, response) = try await session.data(for: request)
-        guard let http = response as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {
-            throw APIError.badResponse
-        }
+        try await store.ensureReady()
         do {
-            return try decoder.decode(T.self, from: data)
+            try await store.rearrangeSchedule(
+                type: type,
+                blockId: request.blockId,
+                assignments: request.assignments
+            )
+            return try await store.getRearrangeLayout(type: type, blockId: request.blockId)
         } catch {
-            throw APIError.decodingFailed
+            throw APIError.store(error)
         }
     }
 }

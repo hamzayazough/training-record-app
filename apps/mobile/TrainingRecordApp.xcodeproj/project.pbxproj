@@ -3,95 +3,114 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130BD64191C149C98FEF732F /* PROGRAM_ROUTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */; };
-		133F75FE7481498BA952CF69 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE8165D004F66846D4207 /* DayDetailView.swift */; };
-		A3FDAFA648F34C4C84127DCB /* ScheduleDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */; };
-		B2C3D4E5F647890123450001 /* DayStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F647890123450002 /* DayStatusBadge.swift */; };
-		B2C3D4E5F647890123450003 /* DAY_CARD_BADGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F647890123450004 /* DAY_CARD_BADGE.swift */; };
-		E513A0CB2F9E4520B919F687 /* TrainingRecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */; };
-		A4DEF8C91EC34076854F9E96 /* AppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A0A260BB14B8D922B89FE /* AppHeader.swift */; };
-		AEB3CD66D10D4BA4911324A4 /* DayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C8FB1B331420F817D5DC2 /* DayCard.swift */; };
-		3C654EBA4E2E432EA3E2C172 /* ExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBFF75CBF4EFEBD748940 /* ExerciseRow.swift */; };
-		3ECEE8114EB040A6A02C7A09 /* HorizontalDayStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */; };
-		BD7782BAEA1A4845B2937D8F /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585530B151EA4800AE3BEA51 /* PrimaryButton.swift */; };
-		25C8E030571841CA9C54C948 /* ProgramHeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80047CECC99543AAB52C1CB0 /* ProgramHeroCard.swift */; };
-		E5F647890123456789AB0001 /* ProgramSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F647890123456789AB0002 /* ProgramSectionHeader.swift */; };
-		09B50A71EBC3484E8B71B17D /* StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE41D5E4F94A49894D0474 /* StatusDot.swift */; };
-		3F7A63D349C546758794CB98 /* VerticalDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93925BE45024EA190D07EB7 /* VerticalDayList.swift */; };
-		FFEF84B7D240415CBCD4595A /* API_CONFIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129B90122124C63973902E9 /* API_CONFIG.swift */; };
-		CD996E9728F34D6CB26008BD /* APP_COLORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B595E328720C4B32BE410C87 /* APP_COLORS.swift */; };
-		E8C1A2B3D4F5467788990011 /* CALENDAR_PAGING.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1A2B3D4F5467788990010 /* CALENDAR_PAGING.swift */; };
-		C3D4E5F64789012345670001 /* REARRANGE_LAYOUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F64789012345670002 /* REARRANGE_LAYOUT.swift */; };
-		A1B2C3D4E5F6478901230001 /* RearrangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230002 /* RearrangeViewModel.swift */; };
-		A1B2C3D4E5F6478901230003 /* RearrangeScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230004 /* RearrangeScheduleView.swift */; };
-		A1B2C3D4E5F6478901230005 /* RearrangeTrainingChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230006 /* RearrangeTrainingChip.swift */; };
-		A1B2C3D4E5F6478901230007 /* RearrangeDayDropZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230008 /* RearrangeDayDropZone.swift */; };
-		A1B2C3D4E5F6478901230009 /* RearrangeDraggableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F647890123000A /* RearrangeDraggableChip.swift */; };
-		AD8392B82B2F40C8B6EECDB8 /* APP_LAYOUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48C6669E564FDAB1F9C1A4 /* APP_LAYOUT.swift */; };
-		2215D7D209F54C01B12515E8 /* PERFORMANCE_STATUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CECDE5CD0F941EEAC87E795 /* PERFORMANCE_STATUS.swift */; };
-		5AC277B1FB414798ADFAFB1E /* PROGRAM_TYPE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455068377488441E95210C98 /* PROGRAM_TYPE.swift */; };
-		5B23DA1FB56748338EAA06CC /* WEEKDAY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA6582E6894589A1924D1B /* WEEKDAY.swift */; };
-		1908DA38C6B948B097F502AA /* FeedbackBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */; };
-		D5A6FF1384EA4348BDA07B10 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6C8A9C206485EA1EB05AE /* HomeView.swift */; };
-		81EDF8B6978C47369F6BEAC8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */; };
-		D4E5F6478901234567890001 /* HOME_ROUTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890002 /* HOME_ROUTE.swift */; };
-		D4E5F6478901234567890003 /* CombinedDayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890004 /* CombinedDayDetailView.swift */; };
-		D4E5F6478901234567890005 /* CombinedDayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890006 /* CombinedDayDetailViewModel.swift */; };
-		4B6FF2A3F2D44460A33709D0 /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */; };
-		B31A14B4AD6348A2AD7B62F0 /* ProgramDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */; };
-		A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FA2AB2D384949A31E01DB /* MoveSessionSheet.swift */; };
-		296A7852C9B442E19D551BC4 /* ProgramModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE22DAD304453680C25FCB /* ProgramModels.swift */; };
-		197B62F5DD8A4B9DADB9E977 /* TrainingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB08E4E12E48518417E2E1 /* TrainingAPIClient.swift */; };
-		F008598D2E28448CA7B6AA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4FFEDD3E554D7BA72744BC /* Assets.xcassets */; };
+		09B50A71EBC3484E8B71B17D /* TrainingRecordApp/Components/StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE41D5E4F94A49894D0474 /* TrainingRecordApp/Components/StatusDot.swift */; };
+		130BD64191C149C98FEF732F /* TrainingRecordApp/Enums/PROGRAM_ROUTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274737F9C36341B6BACF810C /* TrainingRecordApp/Enums/PROGRAM_ROUTE.swift */; };
+		133F75FE7481498BA952CF69 /* TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE8165D004F66846D4207 /* TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift */; };
+		181F74C33DDC4B7CA1CBB463 /* TrainingRecordApp/Constants/ATLAS_CONFIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88069893ADFB4FA8BFCAEB92 /* TrainingRecordApp/Constants/ATLAS_CONFIG.swift */; };
+		1908DA38C6B948B097F502AA /* TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67A3AE529C4533A2BEC388 /* TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift */; };
+		197B62F5DD8A4B9DADB9E977 /* TrainingRecordApp/Services/TrainingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB08E4E12E48518417E2E1 /* TrainingRecordApp/Services/TrainingAPIClient.swift */; };
+		2215D7D209F54C01B12515E8 /* TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CECDE5CD0F941EEAC87E795 /* TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift */; };
+		25C8E030571841CA9C54C948 /* TrainingRecordApp/Components/ProgramHeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80047CECC99543AAB52C1CB0 /* TrainingRecordApp/Components/ProgramHeroCard.swift */; };
+		296A7852C9B442E19D551BC4 /* TrainingRecordApp/Models/ProgramModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE22DAD304453680C25FCB /* TrainingRecordApp/Models/ProgramModels.swift */; };
+		3C654EBA4E2E432EA3E2C172 /* TrainingRecordApp/Components/ExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBFF75CBF4EFEBD748940 /* TrainingRecordApp/Components/ExerciseRow.swift */; };
+		3ECEE8114EB040A6A02C7A09 /* TrainingRecordApp/Components/HorizontalDayStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33016B27611F455C9326B5A2 /* TrainingRecordApp/Components/HorizontalDayStrip.swift */; };
+		3F7A63D349C546758794CB98 /* TrainingRecordApp/Components/VerticalDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93925BE45024EA190D07EB7 /* TrainingRecordApp/Components/VerticalDayList.swift */; };
+		4B6FF2A3F2D44460A33709D0 /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7B4C4001D437D87E00E0D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift */; };
+		5AC277B1FB414798ADFAFB1E /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455068377488441E95210C98 /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift */; };
+		5B23DA1FB56748338EAA06CC /* TrainingRecordApp/Enums/WEEKDAY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA6582E6894589A1924D1B /* TrainingRecordApp/Enums/WEEKDAY.swift */; };
+		6278B5DACB9E46AFB1D3A4AF /* TrainingRecordApp/Models/ProgramSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E14A53C0644C79BA4E94A /* TrainingRecordApp/Models/ProgramSeed.swift */; };
+		68314E9117C4417C9C6F80D3 /* TrainingRecordApp/Resources/Programs/endurance.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A72461FEE04899A29FF397 /* TrainingRecordApp/Resources/Programs/endurance.json */; };
+		81EDF8B6978C47369F6BEAC8 /* TrainingRecordApp/Features/Home/HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662FE9FF54394FFEBD14F0CE /* TrainingRecordApp/Features/Home/HomeViewModel.swift */; };
+		A1B2C3D4E5F6478901230001 /* TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230002 /* TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift */; };
+		A1B2C3D4E5F6478901230003 /* TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230004 /* TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift */; };
+		A1B2C3D4E5F6478901230005 /* TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230006 /* TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift */; };
+		A1B2C3D4E5F6478901230007 /* TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478901230008 /* TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift */; };
+		A1B2C3D4E5F6478901230009 /* TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F647890123000A /* TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift */; };
+		A3FDAFA648F34C4C84127DCB /* TrainingRecordApp/Components/ScheduleDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE8DCDAB1B438893073381 /* TrainingRecordApp/Components/ScheduleDayCard.swift */; };
+		A4DEF8C91EC34076854F9E96 /* TrainingRecordApp/Components/AppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A0A260BB14B8D922B89FE /* TrainingRecordApp/Components/AppHeader.swift */; };
+		A9213A39FE144C5DB752F789 /* TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FA2AB2D384949A31E01DB /* TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift */; };
+		AD8392B82B2F40C8B6EECDB8 /* TrainingRecordApp/Constants/APP_LAYOUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48C6669E564FDAB1F9C1A4 /* TrainingRecordApp/Constants/APP_LAYOUT.swift */; };
+		AEB3CD66D10D4BA4911324A4 /* TrainingRecordApp/Components/DayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C8FB1B331420F817D5DC2 /* TrainingRecordApp/Components/DayCard.swift */; };
+		B2C3D4E5F647890123450001 /* TrainingRecordApp/Components/DayStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F647890123450002 /* TrainingRecordApp/Components/DayStatusBadge.swift */; };
+		B2C3D4E5F647890123450003 /* TrainingRecordApp/Enums/DAY_CARD_BADGE.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F647890123450004 /* TrainingRecordApp/Enums/DAY_CARD_BADGE.swift */; };
+		B31A14B4AD6348A2AD7B62F0 /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCE8DD999948A391053D2D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift */; };
+		BD7782BAEA1A4845B2937D8F /* TrainingRecordApp/Components/PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585530B151EA4800AE3BEA51 /* TrainingRecordApp/Components/PrimaryButton.swift */; };
+		BEEF0001MONGOSECRET00000002 /* TrainingRecordApp/Generated/MONGODB_SECRETS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF0001MONGOSECRET00000001 /* TrainingRecordApp/Generated/MONGODB_SECRETS.swift */; };
+		C20439827E47A2983C25B477 /* MongoKitten in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E6E9174448565FEA58EDB /* MongoKitten */; };
+		C3D4E5F64789012345670001 /* TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F64789012345670002 /* TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift */; };
+		C74CB69388174580B588EAE6 /* TrainingRecordApp/Services/ScheduleDateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D059FE3F04E9F98BE1269 /* TrainingRecordApp/Services/ScheduleDateHelpers.swift */; };
+		CD996E9728F34D6CB26008BD /* TrainingRecordApp/Constants/APP_COLORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B595E328720C4B32BE410C87 /* TrainingRecordApp/Constants/APP_COLORS.swift */; };
+		CFE31662A5FE45018F587646 /* TrainingRecordApp/Resources/Programs/calisthenics.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3094563E04131AF6C80D9 /* TrainingRecordApp/Resources/Programs/calisthenics.json */; };
+		D4C12D99C318416FA1AA78BB /* TrainingRecordApp/Services/AtlasProgramPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE74B225A54212AE47F646 /* TrainingRecordApp/Services/AtlasProgramPersistence.swift */; };
+		D4E5F6478901234567890001 /* TrainingRecordApp/Enums/HOME_ROUTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890002 /* TrainingRecordApp/Enums/HOME_ROUTE.swift */; };
+		D4E5F6478901234567890003 /* TrainingRecordApp/Features/Home/CombinedDayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890004 /* TrainingRecordApp/Features/Home/CombinedDayDetailView.swift */; };
+		D4E5F6478901234567890005 /* TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890006 /* TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift */; };
+		D5A6FF1384EA4348BDA07B10 /* TrainingRecordApp/Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6C8A9C206485EA1EB05AE /* TrainingRecordApp/Features/Home/HomeView.swift */; };
+		E513A0CB2F9E4520B919F687 /* TrainingRecordApp/App/TrainingRecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CEEF0624F4748B9A9537F /* TrainingRecordApp/App/TrainingRecordApp.swift */; };
+		E5F647890123456789AB0001 /* TrainingRecordApp/Components/ProgramSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F647890123456789AB0002 /* TrainingRecordApp/Components/ProgramSectionHeader.swift */; };
+		E8C1A2B3D4F5467788990011 /* TrainingRecordApp/Constants/CALENDAR_PAGING.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1A2B3D4F5467788990010 /* TrainingRecordApp/Constants/CALENDAR_PAGING.swift */; };
+		F008598D2E28448CA7B6AA72 /* TrainingRecordApp/Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4FFEDD3E554D7BA72744BC /* TrainingRecordApp/Resources/Assets.xcassets */; };
+		F11B71AE31854547B5A2A0C0 /* TrainingRecordApp/Services/LocalProgramPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEBAA1DE274CDFA9F4CA95 /* TrainingRecordApp/Services/LocalProgramPersistence.swift */; };
+		FF8B29A145F642EBA30782C2 /* TrainingRecordApp/Services/ProgramStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56DF921DAEB4C6C875EE422 /* TrainingRecordApp/Services/ProgramStore.swift */; };
+		FFEF84B7D240415CBCD4595A /* TrainingRecordApp/Constants/API_CONFIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129B90122124C63973902E9 /* TrainingRecordApp/Constants/API_CONFIG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/PROGRAM_ROUTE.swift"; sourceTree = SOURCE_ROOT; };
-		C32DE8165D004F66846D4207 /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift"; sourceTree = SOURCE_ROOT; };
-		DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ScheduleDayCard.swift"; sourceTree = SOURCE_ROOT; };
-		B2C3D4E5F647890123450002 /* DayStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/DayStatusBadge.swift"; sourceTree = SOURCE_ROOT; };
-		B2C3D4E5F647890123450004 /* DAY_CARD_BADGE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/DAY_CARD_BADGE.swift"; sourceTree = SOURCE_ROOT; };
-		BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/App/TrainingRecordApp.swift"; sourceTree = SOURCE_ROOT; };
-		336A0A260BB14B8D922B89FE /* AppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/AppHeader.swift"; sourceTree = SOURCE_ROOT; };
-		499C8FB1B331420F817D5DC2 /* DayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/DayCard.swift"; sourceTree = SOURCE_ROOT; };
-		F41CBFF75CBF4EFEBD748940 /* ExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ExerciseRow.swift"; sourceTree = SOURCE_ROOT; };
-		33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/HorizontalDayStrip.swift"; sourceTree = SOURCE_ROOT; };
-		585530B151EA4800AE3BEA51 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/PrimaryButton.swift"; sourceTree = SOURCE_ROOT; };
-		80047CECC99543AAB52C1CB0 /* ProgramHeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ProgramHeroCard.swift"; sourceTree = SOURCE_ROOT; };
-		E5F647890123456789AB0002 /* ProgramSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ProgramSectionHeader.swift"; sourceTree = SOURCE_ROOT; };
-		4CBE41D5E4F94A49894D0474 /* StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/StatusDot.swift"; sourceTree = SOURCE_ROOT; };
-		F93925BE45024EA190D07EB7 /* VerticalDayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/VerticalDayList.swift"; sourceTree = SOURCE_ROOT; };
-		1129B90122124C63973902E9 /* API_CONFIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/API_CONFIG.swift"; sourceTree = SOURCE_ROOT; };
-		B595E328720C4B32BE410C87 /* APP_COLORS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/APP_COLORS.swift"; sourceTree = SOURCE_ROOT; };
-		2C48C6669E564FDAB1F9C1A4 /* APP_LAYOUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/APP_LAYOUT.swift"; sourceTree = SOURCE_ROOT; };
-		E8C1A2B3D4F5467788990010 /* CALENDAR_PAGING.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/CALENDAR_PAGING.swift"; sourceTree = SOURCE_ROOT; };
-		C3D4E5F64789012345670002 /* REARRANGE_LAYOUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift"; sourceTree = SOURCE_ROOT; };
-		A1B2C3D4E5F6478901230002 /* RearrangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift"; sourceTree = SOURCE_ROOT; };
-		A1B2C3D4E5F6478901230004 /* RearrangeScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift"; sourceTree = SOURCE_ROOT; };
-		A1B2C3D4E5F6478901230006 /* RearrangeTrainingChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift"; sourceTree = SOURCE_ROOT; };
-		A1B2C3D4E5F6478901230008 /* RearrangeDayDropZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift"; sourceTree = SOURCE_ROOT; };
-		A1B2C3D4E5F647890123000A /* RearrangeDraggableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift"; sourceTree = SOURCE_ROOT; };
-		3CECDE5CD0F941EEAC87E795 /* PERFORMANCE_STATUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift"; sourceTree = SOURCE_ROOT; };
-		455068377488441E95210C98 /* PROGRAM_TYPE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/PROGRAM_TYPE.swift"; sourceTree = SOURCE_ROOT; };
-		74CA6582E6894589A1924D1B /* WEEKDAY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/WEEKDAY.swift"; sourceTree = SOURCE_ROOT; };
-		6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift"; sourceTree = SOURCE_ROOT; };
-		CFB6C8A9C206485EA1EB05AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/HomeView.swift"; sourceTree = SOURCE_ROOT; };
-		662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/HomeViewModel.swift"; sourceTree = SOURCE_ROOT; };
-		D4E5F6478901234567890002 /* HOME_ROUTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/HOME_ROUTE.swift"; sourceTree = SOURCE_ROOT; };
-		D4E5F6478901234567890004 /* CombinedDayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/CombinedDayDetailView.swift"; sourceTree = SOURCE_ROOT; };
-		D4E5F6478901234567890006 /* CombinedDayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift"; sourceTree = SOURCE_ROOT; };
-		23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift"; sourceTree = SOURCE_ROOT; };
-		14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift"; sourceTree = SOURCE_ROOT; };
-		C50FA2AB2D384949A31E01DB /* MoveSessionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift"; sourceTree = SOURCE_ROOT; };
-		2ADE22DAD304453680C25FCB /* ProgramModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Models/ProgramModels.swift"; sourceTree = SOURCE_ROOT; };
-		6ACB08E4E12E48518417E2E1 /* TrainingAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Services/TrainingAPIClient.swift"; sourceTree = SOURCE_ROOT; };
-		4F4FFEDD3E554D7BA72744BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TrainingRecordApp/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		B9643F2636DF48ECB8541020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TrainingRecordApp/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		03A72461FEE04899A29FF397 /* TrainingRecordApp/Resources/Programs/endurance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrainingRecordApp/Resources/Programs/endurance.json; sourceTree = SOURCE_ROOT; };
+		09BEBAA1DE274CDFA9F4CA95 /* TrainingRecordApp/Services/LocalProgramPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Services/LocalProgramPersistence.swift; sourceTree = SOURCE_ROOT; };
 		0EF71EB682EB49CA9E91F3BD /* TrainingRecordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingRecordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1129B90122124C63973902E9 /* TrainingRecordApp/Constants/API_CONFIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/API_CONFIG.swift; sourceTree = SOURCE_ROOT; };
+		135E14A53C0644C79BA4E94A /* TrainingRecordApp/Models/ProgramSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Models/ProgramSeed.swift; sourceTree = SOURCE_ROOT; };
+		14BCE8DD999948A391053D2D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		23E7B4C4001D437D87E00E0D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift; sourceTree = SOURCE_ROOT; };
+		274737F9C36341B6BACF810C /* TrainingRecordApp/Enums/PROGRAM_ROUTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/PROGRAM_ROUTE.swift; sourceTree = SOURCE_ROOT; };
+		2ADE22DAD304453680C25FCB /* TrainingRecordApp/Models/ProgramModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Models/ProgramModels.swift; sourceTree = SOURCE_ROOT; };
+		2C48C6669E564FDAB1F9C1A4 /* TrainingRecordApp/Constants/APP_LAYOUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/APP_LAYOUT.swift; sourceTree = SOURCE_ROOT; };
+		31DE74B225A54212AE47F646 /* TrainingRecordApp/Services/AtlasProgramPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Services/AtlasProgramPersistence.swift; sourceTree = SOURCE_ROOT; };
+		33016B27611F455C9326B5A2 /* TrainingRecordApp/Components/HorizontalDayStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/HorizontalDayStrip.swift; sourceTree = SOURCE_ROOT; };
+		336A0A260BB14B8D922B89FE /* TrainingRecordApp/Components/AppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/AppHeader.swift; sourceTree = SOURCE_ROOT; };
+		3CECDE5CD0F941EEAC87E795 /* TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift; sourceTree = SOURCE_ROOT; };
+		455068377488441E95210C98 /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/PROGRAM_TYPE.swift; sourceTree = SOURCE_ROOT; };
+		499C8FB1B331420F817D5DC2 /* TrainingRecordApp/Components/DayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/DayCard.swift; sourceTree = SOURCE_ROOT; };
+		4CBE41D5E4F94A49894D0474 /* TrainingRecordApp/Components/StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/StatusDot.swift; sourceTree = SOURCE_ROOT; };
+		4F4FFEDD3E554D7BA72744BC /* TrainingRecordApp/Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TrainingRecordApp/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		585530B151EA4800AE3BEA51 /* TrainingRecordApp/Components/PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/PrimaryButton.swift; sourceTree = SOURCE_ROOT; };
+		662FE9FF54394FFEBD14F0CE /* TrainingRecordApp/Features/Home/HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Home/HomeViewModel.swift; sourceTree = SOURCE_ROOT; };
+		6ACB08E4E12E48518417E2E1 /* TrainingRecordApp/Services/TrainingAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Services/TrainingAPIClient.swift; sourceTree = SOURCE_ROOT; };
+		6E67A3AE529C4533A2BEC388 /* TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift; sourceTree = SOURCE_ROOT; };
+		74CA6582E6894589A1924D1B /* TrainingRecordApp/Enums/WEEKDAY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/WEEKDAY.swift; sourceTree = SOURCE_ROOT; };
+		80047CECC99543AAB52C1CB0 /* TrainingRecordApp/Components/ProgramHeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/ProgramHeroCard.swift; sourceTree = SOURCE_ROOT; };
+		88069893ADFB4FA8BFCAEB92 /* TrainingRecordApp/Constants/ATLAS_CONFIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/ATLAS_CONFIG.swift; sourceTree = SOURCE_ROOT; };
+		9CE3094563E04131AF6C80D9 /* TrainingRecordApp/Resources/Programs/calisthenics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrainingRecordApp/Resources/Programs/calisthenics.json; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F6478901230002 /* TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F6478901230004 /* TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F6478901230006 /* TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F6478901230008 /* TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F647890123000A /* TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift; sourceTree = SOURCE_ROOT; };
+		B2C3D4E5F647890123450002 /* TrainingRecordApp/Components/DayStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/DayStatusBadge.swift; sourceTree = SOURCE_ROOT; };
+		B2C3D4E5F647890123450004 /* TrainingRecordApp/Enums/DAY_CARD_BADGE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/DAY_CARD_BADGE.swift; sourceTree = SOURCE_ROOT; };
+		B595E328720C4B32BE410C87 /* TrainingRecordApp/Constants/APP_COLORS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/APP_COLORS.swift; sourceTree = SOURCE_ROOT; };
+		B9643F2636DF48ECB8541020 /* TrainingRecordApp/Resources/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TrainingRecordApp/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		BEEF0001MONGOSECRET00000001 /* TrainingRecordApp/Generated/MONGODB_SECRETS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Generated/MONGODB_SECRETS.swift; sourceTree = SOURCE_ROOT; };
+		BF7CEEF0624F4748B9A9537F /* TrainingRecordApp/App/TrainingRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/App/TrainingRecordApp.swift; sourceTree = SOURCE_ROOT; };
+		C32DE8165D004F66846D4207 /* TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift; sourceTree = SOURCE_ROOT; };
+		C3D4E5F64789012345670002 /* TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift; sourceTree = SOURCE_ROOT; };
+		C50FA2AB2D384949A31E01DB /* TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift; sourceTree = SOURCE_ROOT; };
+		CFB6C8A9C206485EA1EB05AE /* TrainingRecordApp/Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Home/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		D4E5F6478901234567890002 /* TrainingRecordApp/Enums/HOME_ROUTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/HOME_ROUTE.swift; sourceTree = SOURCE_ROOT; };
+		D4E5F6478901234567890004 /* TrainingRecordApp/Features/Home/CombinedDayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Home/CombinedDayDetailView.swift; sourceTree = SOURCE_ROOT; };
+		D4E5F6478901234567890006 /* TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		D56DF921DAEB4C6C875EE422 /* TrainingRecordApp/Services/ProgramStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Services/ProgramStore.swift; sourceTree = SOURCE_ROOT; };
+		DECE8DCDAB1B438893073381 /* TrainingRecordApp/Components/ScheduleDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/ScheduleDayCard.swift; sourceTree = SOURCE_ROOT; };
+		E5F647890123456789AB0002 /* TrainingRecordApp/Components/ProgramSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/ProgramSectionHeader.swift; sourceTree = SOURCE_ROOT; };
+		E8C1A2B3D4F5467788990010 /* TrainingRecordApp/Constants/CALENDAR_PAGING.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/CALENDAR_PAGING.swift; sourceTree = SOURCE_ROOT; };
+		F41CBFF75CBF4EFEBD748940 /* TrainingRecordApp/Components/ExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/ExerciseRow.swift; sourceTree = SOURCE_ROOT; };
+		F93925BE45024EA190D07EB7 /* TrainingRecordApp/Components/VerticalDayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/VerticalDayList.swift; sourceTree = SOURCE_ROOT; };
+		FA4D059FE3F04E9F98BE1269 /* TrainingRecordApp/Services/ScheduleDateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Services/ScheduleDateHelpers.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,18 +118,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20439827E47A2983C25B477 /* MongoKitten in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ECCDDA51326C4209BB0B6A52 = {
+		6A92044CFD57484494F5C715 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6A92044CFD57484494F5C715 /* Source */,
-				9BF3C14275BA4669B9F1F38C /* Products */,
+				BF7CEEF0624F4748B9A9537F /* TrainingRecordApp/App/TrainingRecordApp.swift */,
+				336A0A260BB14B8D922B89FE /* TrainingRecordApp/Components/AppHeader.swift */,
+				499C8FB1B331420F817D5DC2 /* TrainingRecordApp/Components/DayCard.swift */,
+				DECE8DCDAB1B438893073381 /* TrainingRecordApp/Components/ScheduleDayCard.swift */,
+				B2C3D4E5F647890123450002 /* TrainingRecordApp/Components/DayStatusBadge.swift */,
+				F41CBFF75CBF4EFEBD748940 /* TrainingRecordApp/Components/ExerciseRow.swift */,
+				33016B27611F455C9326B5A2 /* TrainingRecordApp/Components/HorizontalDayStrip.swift */,
+				585530B151EA4800AE3BEA51 /* TrainingRecordApp/Components/PrimaryButton.swift */,
+				80047CECC99543AAB52C1CB0 /* TrainingRecordApp/Components/ProgramHeroCard.swift */,
+				E5F647890123456789AB0002 /* TrainingRecordApp/Components/ProgramSectionHeader.swift */,
+				4CBE41D5E4F94A49894D0474 /* TrainingRecordApp/Components/StatusDot.swift */,
+				F93925BE45024EA190D07EB7 /* TrainingRecordApp/Components/VerticalDayList.swift */,
+				1129B90122124C63973902E9 /* TrainingRecordApp/Constants/API_CONFIG.swift */,
+				B595E328720C4B32BE410C87 /* TrainingRecordApp/Constants/APP_COLORS.swift */,
+				2C48C6669E564FDAB1F9C1A4 /* TrainingRecordApp/Constants/APP_LAYOUT.swift */,
+				E8C1A2B3D4F5467788990010 /* TrainingRecordApp/Constants/CALENDAR_PAGING.swift */,
+				C3D4E5F64789012345670002 /* TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift */,
+				3CECDE5CD0F941EEAC87E795 /* TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift */,
+				B2C3D4E5F647890123450004 /* TrainingRecordApp/Enums/DAY_CARD_BADGE.swift */,
+				455068377488441E95210C98 /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift */,
+				274737F9C36341B6BACF810C /* TrainingRecordApp/Enums/PROGRAM_ROUTE.swift */,
+				D4E5F6478901234567890002 /* TrainingRecordApp/Enums/HOME_ROUTE.swift */,
+				74CA6582E6894589A1924D1B /* TrainingRecordApp/Enums/WEEKDAY.swift */,
+				6E67A3AE529C4533A2BEC388 /* TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift */,
+				CFB6C8A9C206485EA1EB05AE /* TrainingRecordApp/Features/Home/HomeView.swift */,
+				662FE9FF54394FFEBD14F0CE /* TrainingRecordApp/Features/Home/HomeViewModel.swift */,
+				D4E5F6478901234567890004 /* TrainingRecordApp/Features/Home/CombinedDayDetailView.swift */,
+				D4E5F6478901234567890006 /* TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift */,
+				23E7B4C4001D437D87E00E0D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift */,
+				C32DE8165D004F66846D4207 /* TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift */,
+				14BCE8DD999948A391053D2D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift */,
+				A1B2C3D4E5F6478901230004 /* TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift */,
+				A1B2C3D4E5F6478901230002 /* TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift */,
+				A1B2C3D4E5F6478901230006 /* TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift */,
+				A1B2C3D4E5F6478901230008 /* TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift */,
+				A1B2C3D4E5F647890123000A /* TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift */,
+				C50FA2AB2D384949A31E01DB /* TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift */,
+				2ADE22DAD304453680C25FCB /* TrainingRecordApp/Models/ProgramModels.swift */,
+				6ACB08E4E12E48518417E2E1 /* TrainingRecordApp/Services/TrainingAPIClient.swift */,
+				88069893ADFB4FA8BFCAEB92 /* TrainingRecordApp/Constants/ATLAS_CONFIG.swift */,
+				135E14A53C0644C79BA4E94A /* TrainingRecordApp/Models/ProgramSeed.swift */,
+				FA4D059FE3F04E9F98BE1269 /* TrainingRecordApp/Services/ScheduleDateHelpers.swift */,
+				09BEBAA1DE274CDFA9F4CA95 /* TrainingRecordApp/Services/LocalProgramPersistence.swift */,
+				31DE74B225A54212AE47F646 /* TrainingRecordApp/Services/AtlasProgramPersistence.swift */,
+				D56DF921DAEB4C6C875EE422 /* TrainingRecordApp/Services/ProgramStore.swift */,
+				9CE3094563E04131AF6C80D9 /* TrainingRecordApp/Resources/Programs/calisthenics.json */,
+				03A72461FEE04899A29FF397 /* TrainingRecordApp/Resources/Programs/endurance.json */,
+				BEEF0001MONGOSECRET00000001 /* TrainingRecordApp/Generated/MONGODB_SECRETS.swift */,
+				4F4FFEDD3E554D7BA72744BC /* TrainingRecordApp/Resources/Assets.xcassets */,
+				B9643F2636DF48ECB8541020 /* TrainingRecordApp/Resources/Info.plist */,
 			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		9BF3C14275BA4669B9F1F38C /* Products */ = {
@@ -121,52 +190,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A92044CFD57484494F5C715 /* Source */ = {
+		ECCDDA51326C4209BB0B6A52 = {
 			isa = PBXGroup;
 			children = (
-				BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */,
-				336A0A260BB14B8D922B89FE /* AppHeader.swift */,
-				499C8FB1B331420F817D5DC2 /* DayCard.swift */,
-				DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */,
-				B2C3D4E5F647890123450002 /* DayStatusBadge.swift */,
-				F41CBFF75CBF4EFEBD748940 /* ExerciseRow.swift */,
-				33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */,
-				585530B151EA4800AE3BEA51 /* PrimaryButton.swift */,
-				80047CECC99543AAB52C1CB0 /* ProgramHeroCard.swift */,
-				E5F647890123456789AB0002 /* ProgramSectionHeader.swift */,
-				4CBE41D5E4F94A49894D0474 /* StatusDot.swift */,
-				F93925BE45024EA190D07EB7 /* VerticalDayList.swift */,
-				1129B90122124C63973902E9 /* API_CONFIG.swift */,
-				B595E328720C4B32BE410C87 /* APP_COLORS.swift */,
-				2C48C6669E564FDAB1F9C1A4 /* APP_LAYOUT.swift */,
-				E8C1A2B3D4F5467788990010 /* CALENDAR_PAGING.swift */,
-				C3D4E5F64789012345670002 /* REARRANGE_LAYOUT.swift */,
-				3CECDE5CD0F941EEAC87E795 /* PERFORMANCE_STATUS.swift */,
-				B2C3D4E5F647890123450004 /* DAY_CARD_BADGE.swift */,
-				455068377488441E95210C98 /* PROGRAM_TYPE.swift */,
-				274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */,
-				D4E5F6478901234567890002 /* HOME_ROUTE.swift */,
-				74CA6582E6894589A1924D1B /* WEEKDAY.swift */,
-				6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */,
-				CFB6C8A9C206485EA1EB05AE /* HomeView.swift */,
-				662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */,
-				D4E5F6478901234567890004 /* CombinedDayDetailView.swift */,
-				D4E5F6478901234567890006 /* CombinedDayDetailViewModel.swift */,
-				23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */,
-				C32DE8165D004F66846D4207 /* DayDetailView.swift */,
-				14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */,
-				A1B2C3D4E5F6478901230004 /* RearrangeScheduleView.swift */,
-				A1B2C3D4E5F6478901230002 /* RearrangeViewModel.swift */,
-				A1B2C3D4E5F6478901230006 /* RearrangeTrainingChip.swift */,
-				A1B2C3D4E5F6478901230008 /* RearrangeDayDropZone.swift */,
-				A1B2C3D4E5F647890123000A /* RearrangeDraggableChip.swift */,
-				C50FA2AB2D384949A31E01DB /* MoveSessionSheet.swift */,
-				2ADE22DAD304453680C25FCB /* ProgramModels.swift */,
-				6ACB08E4E12E48518417E2E1 /* TrainingAPIClient.swift */,
-				4F4FFEDD3E554D7BA72744BC /* Assets.xcassets */,
-				B9643F2636DF48ECB8541020 /* Info.plist */,
+				6A92044CFD57484494F5C715 /* Source */,
+				9BF3C14275BA4669B9F1F38C /* Products */,
 			);
-			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D95C7AAD462429D9B0DA74E /* Build configuration list for PBXNativeTarget "TrainingRecordApp" */;
 			buildPhases = (
+				BEEF0001MONGOSECRET00000003 /* Generate Mongo Secrets */,
 				6AFF5625D23F40FEA1D9C671 /* Sources */,
 				36B7E05E87814A2F97A8FDCB /* Frameworks */,
 				3DFD27031D494B60AC564450 /* Resources */,
@@ -185,6 +215,9 @@
 			dependencies = (
 			);
 			name = TrainingRecordApp;
+			packageProductDependencies = (
+				6E5E6E9174448565FEA58EDB /* MongoKitten */,
+			);
 			productName = TrainingRecordApp;
 			productReference = 0EF71EB682EB49CA9E91F3BD /* TrainingRecordApp.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +241,9 @@
 				Base,
 			);
 			mainGroup = ECCDDA51326C4209BB0B6A52;
+			packageReferences = (
+				A11C00001C0CA1000MONGOKIT /* XCLocalSwiftPackageReference "Vendor/MongoKitten" */,
+			);
 			productRefGroup = 9BF3C14275BA4669B9F1F38C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,62 +258,136 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F008598D2E28448CA7B6AA72 /* Assets.xcassets in Resources */,
+				F008598D2E28448CA7B6AA72 /* TrainingRecordApp/Resources/Assets.xcassets in Resources */,
+				CFE31662A5FE45018F587646 /* TrainingRecordApp/Resources/Programs/calisthenics.json in Resources */,
+				68314E9117C4417C9C6F80D3 /* TrainingRecordApp/Resources/Programs/endurance.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEEF0001MONGOSECRET00000003 /* Generate Mongo Secrets */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.env",
+				"$(SRCROOT)/scripts/generate-mongo-secrets.sh",
+			);
+			name = "Generate Mongo Secrets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/TrainingRecordApp/Generated/MONGODB_SECRETS.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/scripts/generate-mongo-secrets.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AFF5625D23F40FEA1D9C671 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-E513A0CB2F9E4520B919F687 /* TrainingRecordApp.swift in Sources */,
-A4DEF8C91EC34076854F9E96 /* AppHeader.swift in Sources */,
-AEB3CD66D10D4BA4911324A4 /* DayCard.swift in Sources */,
-				A3FDAFA648F34C4C84127DCB /* ScheduleDayCard.swift in Sources */,
-				B2C3D4E5F647890123450001 /* DayStatusBadge.swift in Sources */,
-3C654EBA4E2E432EA3E2C172 /* ExerciseRow.swift in Sources */,
-3ECEE8114EB040A6A02C7A09 /* HorizontalDayStrip.swift in Sources */,
-BD7782BAEA1A4845B2937D8F /* PrimaryButton.swift in Sources */,
-25C8E030571841CA9C54C948 /* ProgramHeroCard.swift in Sources */,
-				E5F647890123456789AB0001 /* ProgramSectionHeader.swift in Sources */,
-09B50A71EBC3484E8B71B17D /* StatusDot.swift in Sources */,
-3F7A63D349C546758794CB98 /* VerticalDayList.swift in Sources */,
-FFEF84B7D240415CBCD4595A /* API_CONFIG.swift in Sources */,
-CD996E9728F34D6CB26008BD /* APP_COLORS.swift in Sources */,
-AD8392B82B2F40C8B6EECDB8 /* APP_LAYOUT.swift in Sources */,
-				E8C1A2B3D4F5467788990011 /* CALENDAR_PAGING.swift in Sources */,
-				C3D4E5F64789012345670001 /* REARRANGE_LAYOUT.swift in Sources */,
-2215D7D209F54C01B12515E8 /* PERFORMANCE_STATUS.swift in Sources */,
-				B2C3D4E5F647890123450003 /* DAY_CARD_BADGE.swift in Sources */,
-5AC277B1FB414798ADFAFB1E /* PROGRAM_TYPE.swift in Sources */,
-				130BD64191C149C98FEF732F /* PROGRAM_ROUTE.swift in Sources */,
-5B23DA1FB56748338EAA06CC /* WEEKDAY.swift in Sources */,
-1908DA38C6B948B097F502AA /* FeedbackBottomSheet.swift in Sources */,
-D5A6FF1384EA4348BDA07B10 /* HomeView.swift in Sources */,
-81EDF8B6978C47369F6BEAC8 /* HomeViewModel.swift in Sources */,
-				D4E5F6478901234567890001 /* HOME_ROUTE.swift in Sources */,
-				D4E5F6478901234567890003 /* CombinedDayDetailView.swift in Sources */,
-				D4E5F6478901234567890005 /* CombinedDayDetailViewModel.swift in Sources */,
-4B6FF2A3F2D44460A33709D0 /* ProgramDetailView.swift in Sources */,
-				133F75FE7481498BA952CF69 /* DayDetailView.swift in Sources */,
-B31A14B4AD6348A2AD7B62F0 /* ProgramDetailViewModel.swift in Sources */,
-				A1B2C3D4E5F6478901230003 /* RearrangeScheduleView.swift in Sources */,
-				A1B2C3D4E5F6478901230001 /* RearrangeViewModel.swift in Sources */,
-				A1B2C3D4E5F6478901230005 /* RearrangeTrainingChip.swift in Sources */,
-				A1B2C3D4E5F6478901230007 /* RearrangeDayDropZone.swift in Sources */,
-				A1B2C3D4E5F6478901230009 /* RearrangeDraggableChip.swift in Sources */,
-A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */,
-296A7852C9B442E19D551BC4 /* ProgramModels.swift in Sources */,
-197B62F5DD8A4B9DADB9E977 /* TrainingAPIClient.swift in Sources */,
+				E513A0CB2F9E4520B919F687 /* TrainingRecordApp/App/TrainingRecordApp.swift in Sources */,
+				A4DEF8C91EC34076854F9E96 /* TrainingRecordApp/Components/AppHeader.swift in Sources */,
+				AEB3CD66D10D4BA4911324A4 /* TrainingRecordApp/Components/DayCard.swift in Sources */,
+				A3FDAFA648F34C4C84127DCB /* TrainingRecordApp/Components/ScheduleDayCard.swift in Sources */,
+				B2C3D4E5F647890123450001 /* TrainingRecordApp/Components/DayStatusBadge.swift in Sources */,
+				3C654EBA4E2E432EA3E2C172 /* TrainingRecordApp/Components/ExerciseRow.swift in Sources */,
+				3ECEE8114EB040A6A02C7A09 /* TrainingRecordApp/Components/HorizontalDayStrip.swift in Sources */,
+				BD7782BAEA1A4845B2937D8F /* TrainingRecordApp/Components/PrimaryButton.swift in Sources */,
+				25C8E030571841CA9C54C948 /* TrainingRecordApp/Components/ProgramHeroCard.swift in Sources */,
+				E5F647890123456789AB0001 /* TrainingRecordApp/Components/ProgramSectionHeader.swift in Sources */,
+				09B50A71EBC3484E8B71B17D /* TrainingRecordApp/Components/StatusDot.swift in Sources */,
+				3F7A63D349C546758794CB98 /* TrainingRecordApp/Components/VerticalDayList.swift in Sources */,
+				FFEF84B7D240415CBCD4595A /* TrainingRecordApp/Constants/API_CONFIG.swift in Sources */,
+				CD996E9728F34D6CB26008BD /* TrainingRecordApp/Constants/APP_COLORS.swift in Sources */,
+				AD8392B82B2F40C8B6EECDB8 /* TrainingRecordApp/Constants/APP_LAYOUT.swift in Sources */,
+				E8C1A2B3D4F5467788990011 /* TrainingRecordApp/Constants/CALENDAR_PAGING.swift in Sources */,
+				C3D4E5F64789012345670001 /* TrainingRecordApp/Constants/REARRANGE_LAYOUT.swift in Sources */,
+				2215D7D209F54C01B12515E8 /* TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift in Sources */,
+				B2C3D4E5F647890123450003 /* TrainingRecordApp/Enums/DAY_CARD_BADGE.swift in Sources */,
+				5AC277B1FB414798ADFAFB1E /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift in Sources */,
+				130BD64191C149C98FEF732F /* TrainingRecordApp/Enums/PROGRAM_ROUTE.swift in Sources */,
+				5B23DA1FB56748338EAA06CC /* TrainingRecordApp/Enums/WEEKDAY.swift in Sources */,
+				1908DA38C6B948B097F502AA /* TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift in Sources */,
+				D5A6FF1384EA4348BDA07B10 /* TrainingRecordApp/Features/Home/HomeView.swift in Sources */,
+				81EDF8B6978C47369F6BEAC8 /* TrainingRecordApp/Features/Home/HomeViewModel.swift in Sources */,
+				D4E5F6478901234567890001 /* TrainingRecordApp/Enums/HOME_ROUTE.swift in Sources */,
+				D4E5F6478901234567890003 /* TrainingRecordApp/Features/Home/CombinedDayDetailView.swift in Sources */,
+				D4E5F6478901234567890005 /* TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift in Sources */,
+				4B6FF2A3F2D44460A33709D0 /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift in Sources */,
+				133F75FE7481498BA952CF69 /* TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift in Sources */,
+				B31A14B4AD6348A2AD7B62F0 /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift in Sources */,
+				A1B2C3D4E5F6478901230003 /* TrainingRecordApp/Features/Rearrange/RearrangeScheduleView.swift in Sources */,
+				A1B2C3D4E5F6478901230001 /* TrainingRecordApp/Features/Rearrange/RearrangeViewModel.swift in Sources */,
+				A1B2C3D4E5F6478901230005 /* TrainingRecordApp/Features/Rearrange/RearrangeTrainingChip.swift in Sources */,
+				A1B2C3D4E5F6478901230007 /* TrainingRecordApp/Features/Rearrange/RearrangeDayDropZone.swift in Sources */,
+				A1B2C3D4E5F6478901230009 /* TrainingRecordApp/Features/Rearrange/RearrangeDraggableChip.swift in Sources */,
+				A9213A39FE144C5DB752F789 /* TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift in Sources */,
+				296A7852C9B442E19D551BC4 /* TrainingRecordApp/Models/ProgramModels.swift in Sources */,
+				197B62F5DD8A4B9DADB9E977 /* TrainingRecordApp/Services/TrainingAPIClient.swift in Sources */,
+				181F74C33DDC4B7CA1CBB463 /* TrainingRecordApp/Constants/ATLAS_CONFIG.swift in Sources */,
+				6278B5DACB9E46AFB1D3A4AF /* TrainingRecordApp/Models/ProgramSeed.swift in Sources */,
+				C74CB69388174580B588EAE6 /* TrainingRecordApp/Services/ScheduleDateHelpers.swift in Sources */,
+				F11B71AE31854547B5A2A0C0 /* TrainingRecordApp/Services/LocalProgramPersistence.swift in Sources */,
+				D4C12D99C318416FA1AA78BB /* TrainingRecordApp/Services/AtlasProgramPersistence.swift in Sources */,
+				FF8B29A145F642EBA30782C2 /* TrainingRecordApp/Services/ProgramStore.swift in Sources */,
+				BEEF0001MONGOSECRET00000002 /* TrainingRecordApp/Generated/MONGODB_SECRETS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0971D449068D43DD9D61F967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		321CDD6B9067406BBC75F0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = L6VSHWTY26;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TrainingRecordApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.trainingrecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		516F379E183A4DA495DA4C8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -295,27 +405,13 @@ A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */,
 			};
 			name = Debug;
 		};
-		0971D449068D43DD9D61F967 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_MODULES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_COMPILATION_MODE = wholemodule;
-			};
-			name = Release;
-		};
 		92162CBB4B75411AB434C0B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = L6VSHWTY26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TrainingRecordApp/Resources/Info.plist;
@@ -327,7 +423,6 @@ A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */,
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.trainingrecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -335,33 +430,6 @@ A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */,
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
-		};
-		321CDD6B9067406BBC75F0FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = TrainingRecordApp/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.trainingrecord;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -385,6 +453,21 @@ A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */,
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A11C00001C0CA1000MONGOKIT /* XCLocalSwiftPackageReference "Vendor/MongoKitten" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/MongoKitten;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E5E6E9174448565FEA58EDB /* MongoKitten */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A11C00001C0CA1000MONGOKIT /* XCLocalSwiftPackageReference "Vendor/MongoKitten" */;
+			productName = MongoKitten;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B2C978ADD08423B8F1DE89C /* Project object */;
 }
