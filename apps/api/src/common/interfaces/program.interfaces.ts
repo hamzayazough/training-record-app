@@ -8,6 +8,10 @@ export interface ExerciseTemplate {
   targetWeight?: string | null;
   setsReps?: string | null;
   rest?: string | null;
+  distance?: string | null;
+  pace?: string | null;
+  duration?: string | null;
+  intervals?: string | null;
   metrics: string[];
 }
 
@@ -48,6 +52,10 @@ export interface ScheduledExercise {
   targetWeight?: string | null;
   setsReps?: string | null;
   rest?: string | null;
+  distance?: string | null;
+  pace?: string | null;
+  duration?: string | null;
+  intervals?: string | null;
   metrics: string[];
   completed: boolean;
   status: PERFORMANCE_STATUS;

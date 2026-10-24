@@ -27,10 +27,51 @@ struct ScheduledExercise: Codable, Identifiable, Equatable {
     let targetWeight: String?
     let setsReps: String?
     let rest: String?
+    let distance: String?
+    let pace: String?
+    let duration: String?
+    let intervals: String?
     let metrics: [String]
     var completed: Bool
     var status: PERFORMANCE_STATUS
     var adjustments: ExerciseAdjustment?
+
+    var hasStructuredTargets: Bool {
+        !detailLines.isEmpty
+    }
+
+    var detailLines: [(label: String, value: String)] {
+        var lines: [(String, String)] = []
+        if let distance, !distance.isEmpty {
+            lines.append(("Distance", distance))
+        }
+        if let pace, !pace.isEmpty {
+            lines.append(("Pace", pace))
+        }
+        if let duration, !duration.isEmpty {
+            lines.append(("Duration", duration))
+        }
+        if let intervals, !intervals.isEmpty {
+            lines.append(("Intervals", intervals))
+        }
+        if let targetWeight, !targetWeight.isEmpty {
+            lines.append(("Weight", targetWeight))
+        }
+        if let setsReps, !setsReps.isEmpty, intervals == nil || intervals?.isEmpty == true {
+            lines.append(("Sets", setsReps))
+        }
+        if let rest, !rest.isEmpty {
+            lines.append(("Rest", rest))
+        }
+        return lines
+    }
+
+    var fallbackPrescription: String? {
+        guard !hasStructuredTargets else { return nil }
+        let text = prescription.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !text.isEmpty, text != name else { return nil }
+        return text
+    }
 }
 
 struct ScheduledSession: Codable, Identifiable, Equatable {
@@ -42,6 +83,29 @@ struct ScheduledSession: Codable, Identifiable, Equatable {
     var date: String
     var weekday: WEEKDAY
     var exercises: [ScheduledExercise]
+
+    var shortTrainingLabel: String {
+        switch programType {
+        case .CALISTHENICS:
+            return Self.titleCasedLabel(sessionLabel)
+        case .ENDURANCE:
+            let labels = exercises.map(\.name).filter {
+                !["Strength A", "Strength B"].contains($0)
+            }
+            if !labels.isEmpty {
+                return labels.joined(separator: " · ")
+            }
+            return sessionLabel
+        }
+    }
+
+    private static func titleCasedLabel(_ raw: String) -> String {
+        raw
+            .lowercased()
+            .split(separator: " ")
+            .map { $0.prefix(1).uppercased() + $0.dropFirst() }
+            .joined(separator: " ")
+    }
 }
 
 struct DayRecord: Codable, Identifiable, Equatable {
@@ -63,6 +127,29 @@ struct DayRecord: Codable, Identifiable, Equatable {
 
     var allExercises: [ScheduledExercise] {
         sessions.flatMap(\.exercises)
+    }
+
+    var shortTrainingLabel: String {
+        let labels = sessions.map(\.shortTrainingLabel)
+        return labels.isEmpty ? "Rest" : labels.joined(separator: " · ")
+    }
+
+    var hasTraining: Bool {
+        !sessions.isEmpty
+    }
+
+    var dayTitle: String {
+        "\(weekday.shortLabel) \(dayNumber)"
+    }
+
+    var dayNumber: String {
+        let parts = date.split(separator: "-")
+        guard parts.count == 3 else { return date }
+        return String(parts[2])
+    }
+
+    var weekNumber: Int? {
+        sessions.first?.weekNumber
     }
 
     /// Past incomplete days surface as BAD; otherwise derive from exercise feedback.

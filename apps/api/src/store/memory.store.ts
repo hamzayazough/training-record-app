@@ -149,12 +149,25 @@ export class MemoryStore implements OnModuleInit {
             name: ex.name,
             prescription:
               ex.prescription ??
-              [ex.name, ex.targetWeight, ex.setsReps, ex.rest]
+              [
+                ex.name,
+                ex.distance,
+                ex.pace,
+                ex.duration,
+                ex.intervals,
+                ex.targetWeight,
+                ex.setsReps,
+                ex.rest,
+              ]
                 .filter(Boolean)
                 .join(' — '),
             targetWeight: ex.targetWeight,
             setsReps: ex.setsReps,
             rest: ex.rest,
+            distance: ex.distance ?? null,
+            pace: ex.pace ?? null,
+            duration: ex.duration ?? null,
+            intervals: ex.intervals ?? null,
             metrics: ex.metrics ?? [],
             completed: false,
             status: PERFORMANCE_STATUS.PENDING,

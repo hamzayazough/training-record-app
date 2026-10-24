@@ -16,11 +16,32 @@ struct ExerciseRow: View {
             .buttonStyle(.plain)
             .disabled(!isInteractive)
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(displayText)
+            VStack(alignment: .leading, spacing: isCompact ? 4 : 8) {
+                Text(exercise.name)
                     .font(isCompact ? .subheadline.weight(.semibold) : .headline)
                     .foregroundStyle(APP_COLORS.NAVY)
                     .strikethrough(exercise.completed && exercise.status != .PENDING)
+
+                if exercise.hasStructuredTargets {
+                    VStack(alignment: .leading, spacing: 4) {
+                        ForEach(exercise.detailLines, id: \.label) { line in
+                            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                                Text(line.label)
+                                    .font(.caption.weight(.semibold))
+                                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
+                                    .frame(width: isCompact ? 48 : 56, alignment: .leading)
+                                Text(line.value)
+                                    .font(.subheadline)
+                                    .foregroundStyle(APP_COLORS.NAVY)
+                            }
+                        }
+                    }
+                } else if let fallback = exercise.fallbackPrescription {
+                    Text(fallback)
+                        .font(.subheadline)
+                        .foregroundStyle(APP_COLORS.MUTED_TEXT)
+                }
+
                 if let adjustments = exercise.adjustments, hasAdjustment(adjustments) {
                     Text(adjustmentText(adjustments))
                         .font(.caption)
@@ -34,11 +55,6 @@ struct ExerciseRow: View {
         .background(isCompact ? Color.clear : APP_COLORS.SURFACE)
         .clipShape(RoundedRectangle(cornerRadius: isCompact ? 0 : 18, style: .continuous))
         .shadow(color: isCompact ? .clear : .black.opacity(0.04), radius: 8, y: 4)
-    }
-
-    private var displayText: String {
-        let prescription = exercise.prescription.trimmingCharacters(in: .whitespacesAndNewlines)
-        return prescription.isEmpty ? exercise.name : prescription
     }
 
     private var checkboxColor: Color {

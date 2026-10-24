@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130BD64191C149C98FEF732F /* PROGRAM_ROUTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */; };
+		133F75FE7481498BA952CF69 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DE8165D004F66846D4207 /* DayDetailView.swift */; };
 		A3FDAFA648F34C4C84127DCB /* ScheduleDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */; };
 		E513A0CB2F9E4520B919F687 /* TrainingRecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */; };
 		A4DEF8C91EC34076854F9E96 /* AppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A0A260BB14B8D922B89FE /* AppHeader.swift */; };
@@ -19,6 +21,7 @@
 		3F7A63D349C546758794CB98 /* VerticalDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93925BE45024EA190D07EB7 /* VerticalDayList.swift */; };
 		FFEF84B7D240415CBCD4595A /* API_CONFIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129B90122124C63973902E9 /* API_CONFIG.swift */; };
 		CD996E9728F34D6CB26008BD /* APP_COLORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B595E328720C4B32BE410C87 /* APP_COLORS.swift */; };
+		E8C1A2B3D4F5467788990011 /* CALENDAR_PAGING.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1A2B3D4F5467788990010 /* CALENDAR_PAGING.swift */; };
 		AD8392B82B2F40C8B6EECDB8 /* APP_LAYOUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48C6669E564FDAB1F9C1A4 /* APP_LAYOUT.swift */; };
 		2215D7D209F54C01B12515E8 /* PERFORMANCE_STATUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CECDE5CD0F941EEAC87E795 /* PERFORMANCE_STATUS.swift */; };
 		5AC277B1FB414798ADFAFB1E /* PROGRAM_TYPE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455068377488441E95210C98 /* PROGRAM_TYPE.swift */; };
@@ -35,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/PROGRAM_ROUTE.swift"; sourceTree = SOURCE_ROOT; };
+		C32DE8165D004F66846D4207 /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/ProgramDetail/DayDetailView.swift"; sourceTree = SOURCE_ROOT; };
 		DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ScheduleDayCard.swift"; sourceTree = SOURCE_ROOT; };
 		BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/App/TrainingRecordApp.swift"; sourceTree = SOURCE_ROOT; };
 		336A0A260BB14B8D922B89FE /* AppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/AppHeader.swift"; sourceTree = SOURCE_ROOT; };
@@ -48,6 +53,7 @@
 		1129B90122124C63973902E9 /* API_CONFIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/API_CONFIG.swift"; sourceTree = SOURCE_ROOT; };
 		B595E328720C4B32BE410C87 /* APP_COLORS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/APP_COLORS.swift"; sourceTree = SOURCE_ROOT; };
 		2C48C6669E564FDAB1F9C1A4 /* APP_LAYOUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/APP_LAYOUT.swift"; sourceTree = SOURCE_ROOT; };
+		E8C1A2B3D4F5467788990010 /* CALENDAR_PAGING.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/CALENDAR_PAGING.swift"; sourceTree = SOURCE_ROOT; };
 		3CECDE5CD0F941EEAC87E795 /* PERFORMANCE_STATUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift"; sourceTree = SOURCE_ROOT; };
 		455068377488441E95210C98 /* PROGRAM_TYPE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/PROGRAM_TYPE.swift"; sourceTree = SOURCE_ROOT; };
 		74CA6582E6894589A1924D1B /* WEEKDAY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/WEEKDAY.swift"; sourceTree = SOURCE_ROOT; };
@@ -107,13 +113,16 @@
 				1129B90122124C63973902E9 /* API_CONFIG.swift */,
 				B595E328720C4B32BE410C87 /* APP_COLORS.swift */,
 				2C48C6669E564FDAB1F9C1A4 /* APP_LAYOUT.swift */,
+				E8C1A2B3D4F5467788990010 /* CALENDAR_PAGING.swift */,
 				3CECDE5CD0F941EEAC87E795 /* PERFORMANCE_STATUS.swift */,
 				455068377488441E95210C98 /* PROGRAM_TYPE.swift */,
+				274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */,
 				74CA6582E6894589A1924D1B /* WEEKDAY.swift */,
 				6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */,
 				CFB6C8A9C206485EA1EB05AE /* HomeView.swift */,
 				662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */,
 				23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */,
+				C32DE8165D004F66846D4207 /* DayDetailView.swift */,
 				14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */,
 				C50FA2AB2D384949A31E01DB /* MoveSessionSheet.swift */,
 				2ADE22DAD304453680C25FCB /* ProgramModels.swift */,
@@ -201,13 +210,16 @@ BD7782BAEA1A4845B2937D8F /* PrimaryButton.swift in Sources */,
 FFEF84B7D240415CBCD4595A /* API_CONFIG.swift in Sources */,
 CD996E9728F34D6CB26008BD /* APP_COLORS.swift in Sources */,
 AD8392B82B2F40C8B6EECDB8 /* APP_LAYOUT.swift in Sources */,
+				E8C1A2B3D4F5467788990011 /* CALENDAR_PAGING.swift in Sources */,
 2215D7D209F54C01B12515E8 /* PERFORMANCE_STATUS.swift in Sources */,
 5AC277B1FB414798ADFAFB1E /* PROGRAM_TYPE.swift in Sources */,
+				130BD64191C149C98FEF732F /* PROGRAM_ROUTE.swift in Sources */,
 5B23DA1FB56748338EAA06CC /* WEEKDAY.swift in Sources */,
 1908DA38C6B948B097F502AA /* FeedbackBottomSheet.swift in Sources */,
 D5A6FF1384EA4348BDA07B10 /* HomeView.swift in Sources */,
 81EDF8B6978C47369F6BEAC8 /* HomeViewModel.swift in Sources */,
 4B6FF2A3F2D44460A33709D0 /* ProgramDetailView.swift in Sources */,
+				133F75FE7481498BA952CF69 /* DayDetailView.swift in Sources */,
 B31A14B4AD6348A2AD7B62F0 /* ProgramDetailViewModel.swift in Sources */,
 A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */,
 296A7852C9B442E19D551BC4 /* ProgramModels.swift in Sources */,

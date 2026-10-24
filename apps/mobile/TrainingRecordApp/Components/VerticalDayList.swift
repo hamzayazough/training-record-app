@@ -2,17 +2,24 @@ import SwiftUI
 
 struct VerticalDayList: View {
     let days: [DayRecord]
-    let onToggleExercise: (ScheduledExercise) -> Void
-    let onMoveSession: (ScheduledSession) -> Void
+    let labelForDay: (DayRecord) -> String
+    let onAppearDay: (DayRecord) -> Void
 
     var body: some View {
-        LazyVStack(spacing: 14) {
+        VStack(spacing: 14) {
             ForEach(days) { day in
-                ScheduleDayCard(
-                    day: day,
-                    onToggleExercise: onToggleExercise,
-                    onMoveSession: onMoveSession
-                )
+                Group {
+                    if day.hasTraining {
+                        NavigationLink(value: PROGRAM_ROUTE.dayDetail(day.id)) {
+                            ScheduleDayCard(day: day, label: labelForDay(day))
+                        }
+                        .buttonStyle(.plain)
+                    } else {
+                        ScheduleDayCard(day: day, label: labelForDay(day))
+                    }
+                }
+                .id(day.id)
+                .onAppear { onAppearDay(day) }
             }
         }
         .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)

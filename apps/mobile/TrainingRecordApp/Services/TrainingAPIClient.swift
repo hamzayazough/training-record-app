@@ -23,9 +23,12 @@ final class TrainingAPIClient {
         try await get("/programs")
     }
 
-    func fetchCalendar(type: PROGRAM_TYPE, days: Int = API_CONFIG.HOME_CALENDAR_DAYS) async throws -> [DayRecord] {
-        let from = DayRecord.todayIso()
-        return try await get("/programs/\(type.rawValue)/calendar?from=\(from)&days=\(days)")
+    func fetchCalendar(
+        type: PROGRAM_TYPE,
+        from: String = DayRecord.todayIso(),
+        days: Int = API_CONFIG.HOME_CALENDAR_DAYS
+    ) async throws -> [DayRecord] {
+        try await get("/programs/\(type.rawValue)/calendar?from=\(from)&days=\(days)")
     }
 
     func fetchDetail(type: PROGRAM_TYPE) async throws -> [DayRecord] {

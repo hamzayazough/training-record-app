@@ -15,9 +15,7 @@ struct HomeView: View {
                     HorizontalDayStrip(days: viewModel.calendarDays)
 
                     VStack(spacing: 16) {
-                        NavigationLink {
-                            ProgramDetailView(programType: .ENDURANCE)
-                        } label: {
+                        NavigationLink(value: PROGRAM_TYPE.ENDURANCE) {
                             ProgramHeroCard(
                                 type: .ENDURANCE,
                                 subtitle: viewModel.subtitle(for: .ENDURANCE)
@@ -25,9 +23,7 @@ struct HomeView: View {
                         }
                         .buttonStyle(.plain)
 
-                        NavigationLink {
-                            ProgramDetailView(programType: .CALISTHENICS)
-                        } label: {
+                        NavigationLink(value: PROGRAM_TYPE.CALISTHENICS) {
                             ProgramHeroCard(
                                 type: .CALISTHENICS,
                                 subtitle: viewModel.subtitle(for: .CALISTHENICS)
@@ -48,6 +44,9 @@ struct HomeView: View {
             }
             .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
             .navigationBarHidden(true)
+            .navigationDestination(for: PROGRAM_TYPE.self) { type in
+                ProgramDetailView(programType: type)
+            }
             .task { await viewModel.load() }
             .refreshable { await viewModel.load() }
         }
