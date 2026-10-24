@@ -34,39 +34,24 @@ struct DayDetailView: View {
     private func content(for day: DayRecord) -> some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(viewModel.displayLabel(for: day).isEmpty ? "No session" : viewModel.displayLabel(for: day))
-                        .font(.title2.weight(.bold))
-                        .foregroundStyle(APP_COLORS.NAVY)
-                    if let weekNumber = day.weekNumber {
-                        Text("Week \(weekNumber)")
-                            .font(.subheadline)
-                            .foregroundStyle(APP_COLORS.MUTED_TEXT)
-                    }
-                }
-
                 if day.sessions.isEmpty {
                     Text(viewModel.isWithinProgram(day.date) ? "Rest day — no training scheduled." : "Outside the current program block.")
                         .font(.subheadline)
                         .foregroundStyle(APP_COLORS.MUTED_TEXT)
-                        .padding(.top, 8)
-                }
+                } else {
+                    ProgramSectionHeader(type: viewModel.programType, sessions: day.sessions)
 
-                ForEach(day.sessions) { session in
-                    if day.sessions.count > 1 {
-                        Text(session.sessionLabel)
-                            .font(.caption.weight(.semibold))
-                            .foregroundStyle(APP_COLORS.MUTED_TEXT)
-                    }
-                    ForEach(session.exercises) { exercise in
-                        ExerciseRow(
-                            exercise: exercise,
-                            isInteractive: day.isToday,
-                            isCompact: false,
-                            onToggle: {
-                                Task { await viewModel.completeExercise(exercise) }
-                            }
-                        )
+                    ForEach(day.sessions) { session in
+                        ForEach(session.exercises) { exercise in
+                            ExerciseRow(
+                                exercise: exercise,
+                                isInteractive: day.isToday,
+                                isCompact: false,
+                                onToggle: {
+                                    Task { await viewModel.completeExercise(exercise) }
+                                }
+                            )
+                        }
                     }
                 }
             }
