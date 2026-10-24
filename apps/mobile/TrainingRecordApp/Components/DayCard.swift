@@ -42,7 +42,7 @@ struct DayCard: View {
     }
 
     private var cardBackground: Color {
-        if isHighlighted { return APP_COLORS.PRIMARY_GREEN }
+        if isHighlighted { return APP_COLORS.TODAY_BLUE }
         switch day.displayStatus {
         case .GOOD: return APP_COLORS.STATUS_GOOD.opacity(0.12)
         case .SO_SO: return APP_COLORS.STATUS_SO_SO.opacity(0.12)

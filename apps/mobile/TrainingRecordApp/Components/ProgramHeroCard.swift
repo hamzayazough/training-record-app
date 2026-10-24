@@ -6,23 +6,13 @@ struct ProgramHeroCard: View {
 
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            RoundedRectangle(cornerRadius: APP_LAYOUT.CARD_CORNER_RADIUS, style: .continuous)
-                .fill(gradient)
-                .frame(height: 160)
-                .shadow(color: .black.opacity(0.12), radius: 16, y: 8)
+            gradient
 
-            Image(illustrationName)
-                .resizable()
-                .scaledToFill()
-                .opacity(0.35)
+            Image(systemName: iconName)
+                .font(.system(size: 64, weight: .light))
+                .foregroundStyle(.white.opacity(0.55))
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                .clipped()
-                .overlay(alignment: .topTrailing) {
-                    Image(systemName: iconName)
-                        .font(.system(size: 64, weight: .light))
-                        .foregroundStyle(.white.opacity(0.55))
-                        .padding(20)
-                }
+                .padding(20)
 
             VStack(alignment: .leading, spacing: 8) {
                 Text(type.title.uppercased())
@@ -35,6 +25,10 @@ struct ProgramHeroCard: View {
             }
             .padding(22)
         }
+        .frame(height: 160)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .clipShape(RoundedRectangle(cornerRadius: APP_LAYOUT.CARD_CORNER_RADIUS, style: .continuous))
+        .shadow(color: .black.opacity(0.12), radius: 16, y: 8)
     }
 
     private var gradient: LinearGradient {
@@ -58,13 +52,6 @@ struct ProgramHeroCard: View {
         switch type {
         case .ENDURANCE: return "figure.run"
         case .CALISTHENICS: return "figure.strengthtraining.traditional"
-        }
-    }
-
-    private var illustrationName: String {
-        switch type {
-        case .ENDURANCE: return "EnduranceIllustration"
-        case .CALISTHENICS: return "CalisthenicsIllustration"
         }
     }
 }
