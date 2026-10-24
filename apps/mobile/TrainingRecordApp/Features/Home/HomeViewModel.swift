@@ -7,6 +7,8 @@ final class HomeViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
 
+    private var enduranceDays: [DayRecord] = []
+    private var calisthenicsDays: [DayRecord] = []
     private let api: TrainingAPIClient
 
     init(api: TrainingAPIClient = .SHARED) {
@@ -23,10 +25,40 @@ final class HomeViewModel: ObservableObject {
             async let enduranceCalendar = api.fetchCalendar(type: .ENDURANCE, days: API_CONFIG.HOME_CALENDAR_DAYS)
             let (loadedPrograms, caliDays, enduDays) = try await (programsTask, calendarTask, enduranceCalendar)
             programs = loadedPrograms
+            calisthenicsDays = caliDays
+            enduranceDays = enduDays
             calendarDays = mergeHomeCalendar(caliDays: caliDays, enduDays: enduDays)
         } catch {
             errorMessage = "Could not reach the training API. Is the Nest server running?"
         }
+    }
+
+    func day(forId dayId: String) -> DayRecord? {
+        calendarDays.first(where: { $0.id == dayId })
+    }
+
+    func subtitle(for type: PROGRAM_TYPE) -> String {
+        guard let program = programs.first(where: { $0.programType == type }) else {
+            return type == .ENDURANCE ? "Running & bike plan" : "Weighted strength plan"
+        }
+        return "Week \(program.currentWeek) of \(program.totalWeeks)"
+    }
+
+    func todayTrainingLabel(for type: PROGRAM_TYPE) -> String? {
+        guard let day = todayDay(for: type), !day.sessions.isEmpty else { return nil }
+        let names = day.sessions.map { Self.titleCased($0.sessionLabel) }
+        return "Today: \(names.joined(separator: ", "))"
+    }
+
+    func todayTrainingCompleted(for type: PROGRAM_TYPE) -> Bool {
+        guard let day = todayDay(for: type), !day.sessions.isEmpty else { return false }
+        let exercises = day.sessions.flatMap(\.exercises)
+        return !exercises.isEmpty && exercises.allSatisfy(\.completed)
+    }
+
+    private func todayDay(for type: PROGRAM_TYPE) -> DayRecord? {
+        let days = type == .ENDURANCE ? enduranceDays : calisthenicsDays
+        return days.first(where: \.isToday)
     }
 
     private func mergeHomeCalendar(caliDays: [DayRecord], enduDays: [DayRecord]) -> [DayRecord] {
@@ -61,10 +93,11 @@ final class HomeViewModel: ObservableObject {
         }
     }
 
-    func subtitle(for type: PROGRAM_TYPE) -> String {
-        guard let program = programs.first(where: { $0.programType == type }) else {
-            return type == .ENDURANCE ? "Running & bike plan" : "Weighted strength plan"
-        }
-        return "Week \(program.currentWeek) of \(program.totalWeeks)"
+    private static func titleCased(_ raw: String) -> String {
+        raw
+            .lowercased()
+            .split(separator: " ")
+            .map { $0.prefix(1).uppercased() + $0.dropFirst() }
+            .joined(separator: " ")
     }
 }

@@ -37,6 +37,9 @@
 		1908DA38C6B948B097F502AA /* FeedbackBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */; };
 		D5A6FF1384EA4348BDA07B10 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6C8A9C206485EA1EB05AE /* HomeView.swift */; };
 		81EDF8B6978C47369F6BEAC8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */; };
+		D4E5F6478901234567890001 /* HOME_ROUTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890002 /* HOME_ROUTE.swift */; };
+		D4E5F6478901234567890003 /* CombinedDayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890004 /* CombinedDayDetailView.swift */; };
+		D4E5F6478901234567890005 /* CombinedDayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6478901234567890006 /* CombinedDayDetailViewModel.swift */; };
 		4B6FF2A3F2D44460A33709D0 /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */; };
 		B31A14B4AD6348A2AD7B62F0 /* ProgramDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */; };
 		A9213A39FE144C5DB752F789 /* MoveSessionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FA2AB2D384949A31E01DB /* MoveSessionSheet.swift */; };
@@ -76,6 +79,9 @@
 		6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Feedback/FeedbackBottomSheet.swift"; sourceTree = SOURCE_ROOT; };
 		CFB6C8A9C206485EA1EB05AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/HomeView.swift"; sourceTree = SOURCE_ROOT; };
 		662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/HomeViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		D4E5F6478901234567890002 /* HOME_ROUTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Enums/HOME_ROUTE.swift"; sourceTree = SOURCE_ROOT; };
+		D4E5F6478901234567890004 /* CombinedDayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/CombinedDayDetailView.swift"; sourceTree = SOURCE_ROOT; };
+		D4E5F6478901234567890006 /* CombinedDayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Home/CombinedDayDetailViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift"; sourceTree = SOURCE_ROOT; };
 		14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/ProgramDetail/ProgramDetailViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		C50FA2AB2D384949A31E01DB /* MoveSessionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Features/Schedule/MoveSessionSheet.swift"; sourceTree = SOURCE_ROOT; };
@@ -136,10 +142,13 @@
 				B2C3D4E5F647890123450004 /* DAY_CARD_BADGE.swift */,
 				455068377488441E95210C98 /* PROGRAM_TYPE.swift */,
 				274737F9C36341B6BACF810C /* PROGRAM_ROUTE.swift */,
+				D4E5F6478901234567890002 /* HOME_ROUTE.swift */,
 				74CA6582E6894589A1924D1B /* WEEKDAY.swift */,
 				6E67A3AE529C4533A2BEC388 /* FeedbackBottomSheet.swift */,
 				CFB6C8A9C206485EA1EB05AE /* HomeView.swift */,
 				662FE9FF54394FFEBD14F0CE /* HomeViewModel.swift */,
+				D4E5F6478901234567890004 /* CombinedDayDetailView.swift */,
+				D4E5F6478901234567890006 /* CombinedDayDetailViewModel.swift */,
 				23E7B4C4001D437D87E00E0D /* ProgramDetailView.swift */,
 				C32DE8165D004F66846D4207 /* DayDetailView.swift */,
 				14BCE8DD999948A391053D2D /* ProgramDetailViewModel.swift */,
@@ -245,6 +254,9 @@ AD8392B82B2F40C8B6EECDB8 /* APP_LAYOUT.swift in Sources */,
 1908DA38C6B948B097F502AA /* FeedbackBottomSheet.swift in Sources */,
 D5A6FF1384EA4348BDA07B10 /* HomeView.swift in Sources */,
 81EDF8B6978C47369F6BEAC8 /* HomeViewModel.swift in Sources */,
+				D4E5F6478901234567890001 /* HOME_ROUTE.swift in Sources */,
+				D4E5F6478901234567890003 /* CombinedDayDetailView.swift in Sources */,
+				D4E5F6478901234567890005 /* CombinedDayDetailViewModel.swift in Sources */,
 4B6FF2A3F2D44460A33709D0 /* ProgramDetailView.swift in Sources */,
 				133F75FE7481498BA952CF69 /* DayDetailView.swift in Sources */,
 B31A14B4AD6348A2AD7B62F0 /* ProgramDetailViewModel.swift in Sources */,

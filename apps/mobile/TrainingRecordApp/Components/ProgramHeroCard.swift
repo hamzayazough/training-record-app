@@ -3,6 +3,8 @@ import SwiftUI
 struct ProgramHeroCard: View {
     let type: PROGRAM_TYPE
     let subtitle: String
+    var todayLabel: String? = nil
+    var todayCompleted: Bool = false
 
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -22,6 +24,21 @@ struct ProgramHeroCard: View {
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.9))
                     .lineLimit(2)
+
+                if let todayLabel {
+                    HStack(spacing: 6) {
+                        Image(systemName: todayCompleted ? "checkmark.circle.fill" : "circle")
+                            .font(.caption.weight(.semibold))
+                        Text(todayLabel)
+                            .font(.caption.weight(.semibold))
+                            .lineLimit(2)
+                    }
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(Color.white.opacity(0.18))
+                    .clipShape(Capsule())
+                }
             }
             .padding(22)
         }

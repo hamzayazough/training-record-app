@@ -7,7 +7,10 @@ struct HorizontalDayStrip: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 12) {
                 ForEach(days) { day in
-                    DayCard(day: day, isCompact: true, isHighlighted: day.isToday)
+                    NavigationLink(value: HOME_ROUTE.dayDetail(day.id)) {
+                        DayCard(day: day, isCompact: true, isHighlighted: day.isToday)
+                    }
+                    .buttonStyle(.plain)
                 }
             }
             .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
