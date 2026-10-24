@@ -63,9 +63,16 @@ export class ProgramsService {
     return result;
   }
 
-  getRearrangeLayout(type: string) {
+  getRearrangeLayout(type: string, blockId?: string) {
     const programType = parseProgramType(type);
-    return this.store.getRearrangeLayout(programType);
+    try {
+      return this.store.getRearrangeLayout(programType, blockId);
+    } catch (error) {
+      if (error instanceof Error && error.message === 'BLOCK_NOT_FOUND') {
+        throw new BadRequestException('INVALID_BLOCK_ID');
+      }
+      throw error;
+    }
   }
 
   async rearrangeSchedule(type: string, dto: RearrangeDto) {
@@ -77,9 +84,16 @@ export class ProgramsService {
       }
       return { dayNumber: item.dayNumber, weekday };
     });
-    this.store.rearrangeSchedule(programType, assignments);
+    try {
+      this.store.rearrangeSchedule(programType, dto.blockId, assignments);
+    } catch (error) {
+      if (error instanceof Error && error.message === 'BLOCK_NOT_FOUND') {
+        throw new BadRequestException('INVALID_BLOCK_ID');
+      }
+      throw error;
+    }
     await this.invalidateCache();
-    return this.store.getRearrangeLayout(programType);
+    return this.store.getRearrangeLayout(programType, dto.blockId);
   }
 
   async moveSession(sessionId: string, dto: MoveSessionDto) {

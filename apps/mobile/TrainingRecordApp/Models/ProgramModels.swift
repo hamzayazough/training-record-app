@@ -148,6 +148,34 @@ struct DayRecord: Codable, Identifiable, Equatable {
         return String(parts[2])
     }
 
+    var monthYearKey: String {
+        String(date.prefix(7))
+    }
+
+    var monthYearLabel: String {
+        guard let parsed = Self.parseIso(date) else { return monthYearKey }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "MMMM yyyy"
+        return formatter.string(from: parsed)
+    }
+
+    var monthShortLabel: String {
+        guard let parsed = Self.parseIso(date) else { return "" }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "MMM"
+        return formatter.string(from: parsed)
+    }
+
+    private static func parseIso(_ iso: String) -> Date? {
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.date(from: iso)
+    }
+
     var weekNumber: Int? {
         sessions.first?.weekNumber
     }
@@ -221,7 +249,22 @@ struct RearrangeWeekDay: Codable, Identifiable, Hashable {
     var id: String { date }
 }
 
+struct RearrangeBlock: Codable, Identifiable, Hashable {
+    let id: String
+    let name: String
+    let weekStart: Int
+    let weekEnd: Int
+    let isCurrent: Bool
+    let isPast: Bool
+
+    var weekRangeLabel: String {
+        "Weeks \(weekStart)–\(weekEnd)"
+    }
+}
+
 struct RearrangeLayout: Codable {
+    let blocks: [RearrangeBlock]
+    let selectedBlockId: String
     let trainings: [RearrangeTraining]
     let weekDays: [RearrangeWeekDay]
 }
@@ -232,5 +275,6 @@ struct RearrangeAssignment: Codable {
 }
 
 struct RearrangeRequest: Codable {
+    let blockId: String
     let assignments: [RearrangeAssignment]
 }

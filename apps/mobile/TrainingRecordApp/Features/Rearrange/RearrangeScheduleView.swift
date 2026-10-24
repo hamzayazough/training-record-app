@@ -14,11 +14,13 @@ struct RearrangeScheduleView: View {
         VStack(spacing: 0) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
+                    blockPicker
+
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("This week")
+                        Text(headerTitle)
                             .font(.headline)
                             .foregroundStyle(APP_COLORS.NAVY)
-                        Text("Drag trainings from the tray onto a day. Empty days stay Rest.")
+                        Text(headerSubtitle)
                             .font(.footnote)
                             .foregroundStyle(APP_COLORS.MUTED_TEXT)
                     }
@@ -30,11 +32,14 @@ struct RearrangeScheduleView: View {
                             isToday: day.date == DayRecord.todayIso(),
                             draggingDayNumber: viewModel.draggingDayNumber,
                             onDrop: { dayNumber in
+                                guard viewModel.canSaveSelectedBlock else { return }
                                 viewModel.assign(dayNumber: dayNumber, to: day.weekday)
                             },
                             onDragStart: { viewModel.beginDrag($0) },
                             onDragEnd: { viewModel.endDrag() }
                         )
+                        .opacity(viewModel.canSaveSelectedBlock ? 1 : 0.55)
+                        .allowsHitTesting(viewModel.canSaveSelectedBlock)
                     }
                 }
                 .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
@@ -45,9 +50,11 @@ struct RearrangeScheduleView: View {
             footer
         }
         .overlay(alignment: .bottomTrailing) {
-            floatingTrainingsPool
-                .padding(.trailing, APP_LAYOUT.HORIZONTAL_PADDING)
-                .padding(.bottom, REARRANGE_LAYOUT.POOL_BOTTOM_OFFSET)
+            if viewModel.canSaveSelectedBlock {
+                floatingTrainingsPool
+                    .padding(.trailing, APP_LAYOUT.HORIZONTAL_PADDING)
+                    .padding(.bottom, REARRANGE_LAYOUT.POOL_BOTTOM_OFFSET)
+            }
         }
         .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
         .navigationTitle("Rearrange")
@@ -58,6 +65,75 @@ struct RearrangeScheduleView: View {
             onSaved?()
             dismiss()
         }
+    }
+
+    private var headerTitle: String {
+        viewModel.selectedBlock?.name ?? "Training block"
+    }
+
+    private var headerSubtitle: String {
+        if let block = viewModel.selectedBlock {
+            if block.isPast {
+                return "\(block.weekRangeLabel). This block is finished."
+            }
+            return "\(block.weekRangeLabel). Drag trainings onto a day. Saves only this block."
+        }
+        return "Drag trainings from the tray onto a day. Empty days stay Rest."
+    }
+
+    private var blockPicker: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Block")
+                .font(.caption.weight(.bold))
+                .foregroundStyle(APP_COLORS.MUTED_TEXT)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(viewModel.blocks) { block in
+                        Button {
+                            Task { await viewModel.selectBlock(block.id) }
+                        } label: {
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(block.name)
+                                    .font(.caption.weight(.bold))
+                                    .lineLimit(1)
+                                Text(block.weekRangeLabel)
+                                    .font(.caption2.weight(.semibold))
+                                    .opacity(0.8)
+                            }
+                            .foregroundStyle(chipForeground(for: block))
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 10)
+                            .background(chipBackground(for: block))
+                            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .stroke(chipStroke(for: block), lineWidth: 1)
+                            )
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(viewModel.isLoading || viewModel.isSaving)
+                    }
+                }
+            }
+        }
+    }
+
+    private func chipForeground(for block: RearrangeBlock) -> Color {
+        if block.id == viewModel.selectedBlockId { return .white }
+        if block.isPast { return APP_COLORS.MUTED_TEXT }
+        return APP_COLORS.NAVY
+    }
+
+    private func chipBackground(for block: RearrangeBlock) -> Color {
+        if block.id == viewModel.selectedBlockId { return APP_COLORS.NAVY }
+        return APP_COLORS.SURFACE
+    }
+
+    private func chipStroke(for block: RearrangeBlock) -> Color {
+        if block.id == viewModel.selectedBlockId { return .clear }
+        if block.isCurrent { return APP_COLORS.ACCENT_ORANGE.opacity(0.55) }
+        return Color.black.opacity(0.06)
     }
 
     private var floatingTrainingsPool: some View {
@@ -123,10 +199,14 @@ struct RearrangeScheduleView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             PrimaryButton(
-                title: viewModel.isSaving ? "Saving…" : "Save arrangement",
+                title: saveButtonTitle,
                 action: { Task { await viewModel.save() } }
             )
-            .disabled(viewModel.isSaving || viewModel.isLoading)
+            .disabled(
+                viewModel.isSaving
+                    || viewModel.isLoading
+                    || !viewModel.canSaveSelectedBlock
+            )
         }
         .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
         .padding(.top, 12)
@@ -136,5 +216,11 @@ struct RearrangeScheduleView: View {
                 .shadow(color: .black.opacity(0.08), radius: 12, y: -4)
                 .ignoresSafeArea(edges: .bottom)
         )
+    }
+
+    private var saveButtonTitle: String {
+        if viewModel.isSaving { return "Saving…" }
+        if !viewModel.canSaveSelectedBlock { return "Block finished" }
+        return "Save this block"
     }
 }

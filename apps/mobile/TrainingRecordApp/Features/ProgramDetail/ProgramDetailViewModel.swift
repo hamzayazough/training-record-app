@@ -8,15 +8,14 @@ final class ProgramDetailViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isLoadingPast = false
     @Published var isLoadingFuture = false
+    @Published var scrollRestoreDayId: String?
 
     let programType: PROGRAM_TYPE
     private let api: TrainingAPIClient
     private(set) var programStartDate: String?
     private(set) var programEndDate: String?
-    private var didScrollToFocus = false
+    private(set) var hasLoaded = false
     private var pagingEnabled = false
-    private var awaitingPastScrollAway = false
-    private var awaitingFutureScrollAway = false
 
     init(programType: PROGRAM_TYPE, api: TrainingAPIClient = .SHARED) {
         self.programType = programType
@@ -65,35 +64,15 @@ final class ProgramDetailViewModel: ObservableObject {
                 from: from,
                 days: CALENDAR_PAGING.INITIAL_TOTAL_DAYS
             )
-            didScrollToFocus = false
-            awaitingPastScrollAway = false
-            awaitingFutureScrollAway = false
+            scrollRestoreDayId = nil
+            hasLoaded = true
         } catch {
             errorMessage = "Failed to load program details."
         }
     }
 
-    func handleDayAppear(_ day: DayRecord) async {
-        guard pagingEnabled else { return }
-        guard let index = days.firstIndex(where: { $0.id == day.id }) else { return }
-
-        if awaitingPastScrollAway, index > 3 {
-            awaitingPastScrollAway = false
-        }
-        if awaitingFutureScrollAway, index < days.count - 4 {
-            awaitingFutureScrollAway = false
-        }
-
-        if index <= 1 {
-            await loadMorePastIfNeeded()
-        }
-        if index >= days.count - 2 {
-            await loadMoreFutureIfNeeded()
-        }
-    }
-
-    private func loadMorePastIfNeeded() async {
-        guard !isLoadingPast, !awaitingPastScrollAway, let first = days.first else { return }
+    func loadMorePastIfNeeded() async {
+        guard pagingEnabled, !isLoadingPast, let first = days.first else { return }
 
         let earliestAllowed = programStartDate.map { Self.addDays($0, days: -CALENDAR_PAGING.PAGE_SIZE) }
         if let earliestAllowed, first.date <= earliestAllowed {
@@ -118,15 +97,16 @@ final class ProgramDetailViewModel: ObservableObject {
             let existing = Set(days.map(\.id))
             let unique = more.filter { !existing.contains($0.id) }
             guard !unique.isEmpty else { return }
+            let anchorId = first.id
             days.insert(contentsOf: unique, at: 0)
-            awaitingPastScrollAway = true
+            scrollRestoreDayId = anchorId
         } catch {
             errorMessage = "Could not load earlier days."
         }
     }
 
-    private func loadMoreFutureIfNeeded() async {
-        guard !isLoadingFuture, !awaitingFutureScrollAway, let last = days.last else { return }
+    func loadMoreFutureIfNeeded() async {
+        guard pagingEnabled, !isLoadingFuture, let last = days.last else { return }
 
         let latestAllowed = programEndDate.map { Self.addDays($0, days: CALENDAR_PAGING.PAGE_SIZE) }
         if let latestAllowed, last.date >= latestAllowed {
@@ -153,20 +133,17 @@ final class ProgramDetailViewModel: ObservableObject {
             let unique = more.filter { !existing.contains($0.id) }
             guard !unique.isEmpty else { return }
             days.append(contentsOf: unique)
-            awaitingFutureScrollAway = true
         } catch {
             errorMessage = "Could not load later days."
         }
     }
 
-    func consumeInitialScroll() -> String? {
-        guard !didScrollToFocus else { return nil }
-        didScrollToFocus = true
-        return focusDayId
-    }
-
     func enablePagingAfterInitialScroll() {
         pagingEnabled = true
+    }
+
+    func clearScrollRestore() {
+        scrollRestoreDayId = nil
     }
 
     func completeExercise(_ exercise: ScheduledExercise) async {

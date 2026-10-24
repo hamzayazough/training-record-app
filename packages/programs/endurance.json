@@ -9,6 +9,44 @@
     "4": "SUNDAY",
     "5": "MONDAY"
   },
+  "blocks": [
+    {
+      "id": "DURABILITY",
+      "name": "Durability / aerobic",
+      "weekStart": 1,
+      "weekEnd": 8
+    },
+    {
+      "id": "TRANSITION_3_RUN",
+      "name": "3-run transition",
+      "weekStart": 9,
+      "weekEnd": 16
+    },
+    {
+      "id": "FOUNDATION_5K",
+      "name": "5K foundation",
+      "weekStart": 17,
+      "weekEnd": 24
+    },
+    {
+      "id": "DEVELOPMENT_5K",
+      "name": "5K development",
+      "weekStart": 25,
+      "weekEnd": 32
+    },
+    {
+      "id": "RACE_5K",
+      "name": "5K race + endurance",
+      "weekStart": 33,
+      "weekEnd": 36
+    },
+    {
+      "id": "MARATHON_BASE",
+      "name": "Marathon base",
+      "weekStart": 37,
+      "weekEnd": 52
+    }
+  ],
   "weeks": [
     {
       "weekNumber": 1,

@@ -27,11 +27,19 @@ export interface WeekTemplate {
   sessions: SessionTemplate[];
 }
 
+export interface ProgramBlock {
+  id: string;
+  name: string;
+  weekStart: number;
+  weekEnd: number;
+}
+
 export interface ProgramSeed {
   programType: PROGRAM_TYPE;
   title: string;
   totalWeeks: number;
   defaultWeekdayByDayNumber: Record<string, WEEKDAY>;
+  blocks?: ProgramBlock[];
   weeks: WeekTemplate[];
 }
 
@@ -101,7 +109,18 @@ export interface RearrangeWeekDay {
   shortLabel: string;
 }
 
+export interface RearrangeBlockSummary {
+  id: string;
+  name: string;
+  weekStart: number;
+  weekEnd: number;
+  isCurrent: boolean;
+  isPast: boolean;
+}
+
 export interface RearrangeLayout {
+  blocks: RearrangeBlockSummary[];
+  selectedBlockId: string;
   trainings: RearrangeTraining[];
   weekDays: RearrangeWeekDay[];
 }

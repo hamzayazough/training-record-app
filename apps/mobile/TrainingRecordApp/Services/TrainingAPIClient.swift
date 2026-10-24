@@ -47,8 +47,13 @@ final class TrainingAPIClient {
         try await patch("/sessions/\(id)/move", body: request)
     }
 
-    func fetchRearrangeLayout(type: PROGRAM_TYPE) async throws -> RearrangeLayout {
-        try await get("/programs/\(type.rawValue)/rearrange")
+    func fetchRearrangeLayout(type: PROGRAM_TYPE, blockId: String? = nil) async throws -> RearrangeLayout {
+        var path = "/programs/\(type.rawValue)/rearrange"
+        if let blockId, !blockId.isEmpty {
+            let encoded = blockId.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? blockId
+            path += "?blockId=\(encoded)"
+        }
+        return try await get(path)
     }
 
     func saveRearrange(type: PROGRAM_TYPE, request: RearrangeRequest) async throws -> RearrangeLayout {

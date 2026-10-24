@@ -12,6 +12,7 @@ import {
 import {
   DayRecord,
   ExerciseAdjustment,
+  ProgramBlock,
   ProgramSeed,
   ProgramSummary,
   RearrangeAssignment,
@@ -106,13 +107,37 @@ function shortWeekdayLabel(weekday: WEEKDAY): string {
   return weekday.slice(0, 3).charAt(0) + weekday.slice(1, 3).toLowerCase();
 }
 
+function blocksForSeed(seed: ProgramSeed): ProgramBlock[] {
+  if (seed.blocks?.length) return seed.blocks;
+  return [
+    {
+      id: 'FULL_PROGRAM',
+      name: 'Full program',
+      weekStart: 1,
+      weekEnd: seed.totalWeeks,
+    },
+  ];
+}
+
+function blockContainingWeek(
+  blocks: ProgramBlock[],
+  weekNumber: number,
+): ProgramBlock | undefined {
+  return blocks.find(
+    (block) => weekNumber >= block.weekStart && weekNumber <= block.weekEnd,
+  );
+}
+
 @Injectable()
 export class MemoryStore implements OnModuleInit {
   private seeds = new Map<PROGRAM_TYPE, ProgramSeed>();
   private startDates = new Map<PROGRAM_TYPE, string>();
   private sessions = new Map<string, ScheduledSession>();
   private exerciseIndex = new Map<string, string>();
-  private weekdayByDayNumber = new Map<PROGRAM_TYPE, Map<number, WEEKDAY>>();
+  private weekdayByBlock = new Map<
+    PROGRAM_TYPE,
+    Map<string, Map<number, WEEKDAY>>
+  >();
 
   onModuleInit(): void {
     this.loadSeeds();
@@ -145,24 +170,35 @@ export class MemoryStore implements OnModuleInit {
     this.seeds.set(PROGRAM_TYPE.ENDURANCE, endu);
   }
 
+  private seedWeekdayMap(seed: ProgramSeed): Map<number, WEEKDAY> {
+    const weekdayMap = new Map<number, WEEKDAY>();
+    for (const [day, weekday] of Object.entries(seed.defaultWeekdayByDayNumber)) {
+      weekdayMap.set(Number(day), weekday);
+    }
+    return weekdayMap;
+  }
+
+  private blockWeekdayMap(
+    type: PROGRAM_TYPE,
+    blockId: string,
+  ): Map<number, WEEKDAY> {
+    return this.weekdayByBlock.get(type)?.get(blockId) ?? new Map();
+  }
+
   private materializeProgram(type: PROGRAM_TYPE): void {
     const seed = this.seeds.get(type);
     const startIso = this.startDates.get(type);
     if (!seed || !startIso) return;
 
-    const weekdayMap = new Map<number, WEEKDAY>();
-    for (const [day, weekday] of Object.entries(seed.defaultWeekdayByDayNumber)) {
-      weekdayMap.set(Number(day), weekday);
-    }
-    this.weekdayByDayNumber.set(type, weekdayMap);
-
+    this.weekdayByBlock.set(type, new Map());
+    const seedWeekdays = this.seedWeekdayMap(seed);
     const programStart = startOfWeekMonday(parseIsoDate(startIso));
 
     for (const week of seed.weeks) {
       const weekStart = addDays(programStart, (week.weekNumber - 1) * 7);
       for (const template of week.sessions) {
         const weekday =
-          weekdayMap.get(template.dayNumber) ?? template.defaultWeekday;
+          seedWeekdays.get(template.dayNumber) ?? template.defaultWeekday;
         const date = dateForWeekdayInWeek(weekStart, weekday);
         const sessionId = randomUUID();
         const exercises: ScheduledExercise[] = template.exercises.map((ex) => {
@@ -312,22 +348,38 @@ export class MemoryStore implements OnModuleInit {
     return session;
   }
 
-  getRearrangeLayout(type: PROGRAM_TYPE): RearrangeLayout {
+  getRearrangeLayout(type: PROGRAM_TYPE, blockId?: string): RearrangeLayout {
     const seed = this.seeds.get(type);
     const startIso = this.startDates.get(type);
     if (!seed || !startIso) throw new Error('PROGRAM_NOT_FOUND');
 
     const summary = this.listPrograms().find((p) => p.programType === type)!;
+    const blocks = blocksForSeed(seed);
+    const currentBlock =
+      blockContainingWeek(blocks, summary.currentWeek) ?? blocks[0];
+    const selected =
+      (blockId ? blocks.find((block) => block.id === blockId) : undefined) ??
+      currentBlock;
+
+    const templateWeekNumber = Math.min(
+      Math.max(summary.currentWeek, selected.weekStart),
+      selected.weekEnd,
+    );
     const week =
-      seed.weeks.find((w) => w.weekNumber === summary.currentWeek) ??
+      seed.weeks.find((w) => w.weekNumber === templateWeekNumber) ??
+      seed.weeks.find((w) => w.weekNumber === selected.weekStart) ??
       seed.weeks[0];
-    const weekdayMap = this.weekdayByDayNumber.get(type) ?? new Map();
+
+    const seedWeekdays = this.seedWeekdayMap(seed);
+    const blockWeekdays = this.blockWeekdayMap(type, selected.id);
 
     const trainings = week.sessions.map((template) => ({
       dayNumber: template.dayNumber,
       label: trainingLabel(template),
       currentWeekday:
-        weekdayMap.get(template.dayNumber) ?? template.defaultWeekday,
+        blockWeekdays.get(template.dayNumber) ??
+        seedWeekdays.get(template.dayNumber) ??
+        template.defaultWeekday,
     }));
 
     const today = new Date();
@@ -342,32 +394,56 @@ export class MemoryStore implements OnModuleInit {
       };
     });
 
-    return { trainings, weekDays };
+    return {
+      blocks: blocks.map((block) => ({
+        id: block.id,
+        name: block.name,
+        weekStart: block.weekStart,
+        weekEnd: block.weekEnd,
+        isCurrent:
+          summary.currentWeek >= block.weekStart &&
+          summary.currentWeek <= block.weekEnd,
+        isPast: block.weekEnd < summary.currentWeek,
+      })),
+      selectedBlockId: selected.id,
+      trainings,
+      weekDays,
+    };
   }
 
-  rearrangeSchedule(type: PROGRAM_TYPE, assignments: RearrangeAssignment[]): void {
+  rearrangeSchedule(
+    type: PROGRAM_TYPE,
+    blockId: string,
+    assignments: RearrangeAssignment[],
+  ): void {
     const seed = this.seeds.get(type);
     const startIso = this.startDates.get(type);
     if (!seed || !startIso) throw new Error('PROGRAM_NOT_FOUND');
 
-    const weekdayMap =
-      this.weekdayByDayNumber.get(type) ?? new Map<number, WEEKDAY>();
+    const blocks = blocksForSeed(seed);
+    const block = blocks.find((item) => item.id === blockId);
+    if (!block) throw new Error('BLOCK_NOT_FOUND');
+
+    const programMaps =
+      this.weekdayByBlock.get(type) ?? new Map<string, Map<number, WEEKDAY>>();
+    const weekdayMap = new Map<number, WEEKDAY>();
     for (const assignment of assignments) {
       weekdayMap.set(assignment.dayNumber, assignment.weekday);
-      seed.defaultWeekdayByDayNumber[String(assignment.dayNumber)] =
-        assignment.weekday;
     }
-    this.weekdayByDayNumber.set(type, weekdayMap);
+    programMaps.set(blockId, weekdayMap);
+    this.weekdayByBlock.set(type, programMaps);
 
     const todayIso = toIsoDate(new Date());
     const programStart = startOfWeekMonday(parseIsoDate(startIso));
     const currentWeek =
       this.listPrograms().find((p) => p.programType === type)?.currentWeek ?? 1;
     const yesterdayIso = toIsoDate(addDays(parseIsoDate(todayIso), -1));
+    const applyFromWeek = Math.max(currentWeek, block.weekStart);
 
     for (const session of this.sessions.values()) {
       if (session.programType !== type) continue;
-      if (session.weekNumber < currentWeek) continue;
+      if (session.weekNumber < applyFromWeek) continue;
+      if (session.weekNumber > block.weekEnd) continue;
 
       const mappedWeekday = weekdayMap.get(session.dayNumber);
       if (!mappedWeekday) continue;

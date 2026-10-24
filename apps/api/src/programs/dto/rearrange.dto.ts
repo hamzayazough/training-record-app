@@ -16,6 +16,9 @@ export class RearrangeAssignmentDto {
 }
 
 export class RearrangeDto {
+  @IsString()
+  blockId!: string;
+
   @IsArray()
   @ArrayMinSize(1)
   @ValidateNested({ each: true })

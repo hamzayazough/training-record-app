@@ -16,7 +16,7 @@ struct ScheduleDayCard: View {
         HStack(alignment: .center, spacing: day.isToday ? 16 : 14) {
             VStack(alignment: .leading, spacing: day.isToday ? 4 : 2) {
                 HStack(spacing: 6) {
-                    Text(day.weekday.shortLabel)
+                    Text("\(day.weekday.shortLabel) · \(day.monthShortLabel)")
                         .font((day.isToday ? Font.subheadline : Font.caption).weight(.semibold))
                         .foregroundStyle(day.isToday ? todayAccent : APP_COLORS.MUTED_TEXT)
                     if day.isToday {

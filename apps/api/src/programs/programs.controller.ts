@@ -45,8 +45,11 @@ export class ProgramsController {
   }
 
   @Get('programs/:type/rearrange')
-  getRearrangeLayout(@Param('type') type: string) {
-    return this.programsService.getRearrangeLayout(type);
+  getRearrangeLayout(
+    @Param('type') type: string,
+    @Query('blockId') blockId?: string,
+  ) {
+    return this.programsService.getRearrangeLayout(type, blockId);
   }
 
   @Post('programs/:type/rearrange')

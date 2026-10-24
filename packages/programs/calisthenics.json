@@ -8,6 +8,14 @@
     "3": "THURSDAY",
     "4": "SATURDAY"
   },
+  "blocks": [
+    {
+      "id": "FULL_PROGRAM",
+      "name": "Full program",
+      "weekStart": 1,
+      "weekEnd": 12
+    }
+  ],
   "weeks": [
     {
       "weekNumber": 1,

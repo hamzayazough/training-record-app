@@ -3,6 +3,8 @@ import CoreTransferable
 
 @MainActor
 final class RearrangeViewModel: ObservableObject {
+    @Published var blocks: [RearrangeBlock] = []
+    @Published var selectedBlockId: String?
     @Published var trainings: [RearrangeTraining] = []
     @Published var weekDays: [RearrangeWeekDay] = []
     @Published var assignmentByDayNumber: [Int: WEEKDAY] = [:]
@@ -18,6 +20,16 @@ final class RearrangeViewModel: ObservableObject {
     init(programType: PROGRAM_TYPE, api: TrainingAPIClient = .SHARED) {
         self.programType = programType
         self.api = api
+    }
+
+    var selectedBlock: RearrangeBlock? {
+        guard let selectedBlockId else { return nil }
+        return blocks.first { $0.id == selectedBlockId }
+    }
+
+    var canSaveSelectedBlock: Bool {
+        guard let selectedBlock else { return false }
+        return !selectedBlock.isPast
     }
 
     var unassignedTrainings: [RearrangeTraining] {
@@ -40,20 +52,24 @@ final class RearrangeViewModel: ObservableObject {
         draggingDayNumber == dayNumber
     }
 
-    func load() async {
+    func load(blockId: String? = nil) async {
         isLoading = true
         errorMessage = nil
         defer { isLoading = false }
         do {
-            let layout = try await api.fetchRearrangeLayout(type: programType)
-            trainings = layout.trainings
-            weekDays = layout.weekDays
-            assignmentByDayNumber = Dictionary(
-                uniqueKeysWithValues: layout.trainings.map { ($0.dayNumber, $0.currentWeekday) }
+            let layout = try await api.fetchRearrangeLayout(
+                type: programType,
+                blockId: blockId ?? selectedBlockId
             )
+            apply(layout: layout)
         } catch {
             errorMessage = "Could not load week layout."
         }
+    }
+
+    func selectBlock(_ blockId: String) async {
+        guard blockId != selectedBlockId else { return }
+        await load(blockId: blockId)
     }
 
     func resetTrainings() {
@@ -70,6 +86,14 @@ final class RearrangeViewModel: ObservableObject {
     }
 
     func save() async {
+        guard canSaveSelectedBlock else {
+            errorMessage = "This block is finished."
+            return
+        }
+        guard let selectedBlockId else {
+            errorMessage = "Select a training block."
+            return
+        }
         guard assignmentByDayNumber.count == trainings.count else {
             errorMessage = "Place every training on a day before saving."
             return
@@ -83,12 +107,25 @@ final class RearrangeViewModel: ObservableObject {
             }
             _ = try await api.saveRearrange(
                 type: programType,
-                request: RearrangeRequest(assignments: assignments)
+                request: RearrangeRequest(
+                    blockId: selectedBlockId,
+                    assignments: assignments
+                )
             )
             didSave = true
         } catch {
             errorMessage = "Could not save arrangement."
         }
+    }
+
+    private func apply(layout: RearrangeLayout) {
+        blocks = layout.blocks
+        selectedBlockId = layout.selectedBlockId
+        trainings = layout.trainings
+        weekDays = layout.weekDays
+        assignmentByDayNumber = Dictionary(
+            uniqueKeysWithValues: layout.trainings.map { ($0.dayNumber, $0.currentWeekday) }
+        )
     }
 }
 

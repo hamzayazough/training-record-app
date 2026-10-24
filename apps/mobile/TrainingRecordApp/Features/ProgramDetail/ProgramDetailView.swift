@@ -2,71 +2,83 @@ import SwiftUI
 
 struct ProgramDetailView: View {
     @StateObject private var viewModel: ProgramDetailViewModel
-    @State private var scrollToDayId: String?
+    @State private var scrollPosition: String?
 
     init(programType: PROGRAM_TYPE) {
         _viewModel = StateObject(wrappedValue: ProgramDetailViewModel(programType: programType))
     }
 
     var body: some View {
-        ScrollViewReader { proxy in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    VerticalDayList(
-                        days: viewModel.days,
-                        labelForDay: { viewModel.displayLabel(for: $0) },
-                        onAppearDay: { day in
-                            Task { await viewModel.handleDayAppear(day) }
-                        }
-                    )
-
-                    if viewModel.isLoadingPast || viewModel.isLoadingFuture {
-                        ProgressView()
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 8)
-                    }
-
-                    if let errorMessage = viewModel.errorMessage {
-                        Text(errorMessage)
-                            .font(.footnote)
-                            .foregroundStyle(APP_COLORS.STATUS_BAD)
-                            .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
-                    }
+        ScrollView {
+            VerticalDayList(
+                days: viewModel.days,
+                labelForDay: { viewModel.displayLabel(for: $0) },
+                isLoadingPast: viewModel.isLoadingPast,
+                isLoadingFuture: viewModel.isLoadingFuture,
+                onLoadPast: {
+                    Task { await viewModel.loadMorePastIfNeeded() }
+                },
+                onLoadFuture: {
+                    Task { await viewModel.loadMoreFutureIfNeeded() }
                 }
-                .padding(.top, 8)
-                .padding(.bottom, 24)
+            )
+            .padding(.top, 8)
+            .padding(.bottom, 24)
+
+            if let errorMessage = viewModel.errorMessage {
+                Text(errorMessage)
+                    .font(.footnote)
+                    .foregroundStyle(APP_COLORS.STATUS_BAD)
+                    .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
+                    .padding(.bottom, 16)
             }
-            .safeAreaInset(edge: .bottom) {
-                rearrangeFooter
-            }
-            .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
-            .navigationTitle(viewModel.programType.title)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: PROGRAM_ROUTE.self) { route in
-                switch route {
-                case .dayDetail(let dayId):
-                    DayDetailView(viewModel: viewModel, dayId: dayId)
-                case .rearrange:
-                    RearrangeScheduleView(programType: viewModel.programType) {
-                        Task { await viewModel.load() }
-                    }
-                }
-            }
-            .task {
-                await viewModel.load()
-                scrollToDayId = viewModel.consumeInitialScroll()
-            }
-            .onChange(of: scrollToDayId) { _, newId in
-                guard let newId else { return }
-                DispatchQueue.main.async {
-                    proxy.scrollTo(newId, anchor: .center)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
-                        proxy.scrollTo(newId, anchor: .center)
-                        viewModel.enablePagingAfterInitialScroll()
-                    }
+        }
+        .scrollPosition(id: $scrollPosition, anchor: .center)
+        .safeAreaInset(edge: .bottom) {
+            rearrangeFooter
+        }
+        .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
+        .navigationTitle(viewModel.programType.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationDestination(for: PROGRAM_ROUTE.self) { route in
+            switch route {
+            case .dayDetail(let dayId):
+                DayDetailView(viewModel: viewModel, dayId: dayId)
+            case .rearrange:
+                RearrangeScheduleView(programType: viewModel.programType) {
+                    Task { await reloadAndScrollToToday() }
                 }
             }
         }
+        .task {
+            if viewModel.hasLoaded {
+                viewModel.enablePagingAfterInitialScroll()
+                return
+            }
+            await reloadAndScrollToToday()
+        }
+        .onChange(of: viewModel.scrollRestoreDayId) { _, dayId in
+            guard let dayId else { return }
+            scrollPosition = dayId
+            viewModel.clearScrollRestore()
+        }
+    }
+
+    private func reloadAndScrollToToday() async {
+        await viewModel.load()
+        await scrollToToday()
+        viewModel.enablePagingAfterInitialScroll()
+    }
+
+    private func scrollToToday() async {
+        let target = viewModel.focusDayId
+        scrollPosition = nil
+        await Task.yield()
+        scrollPosition = target
+        try? await Task.sleep(nanoseconds: 100_000_000)
+        scrollPosition = target
+        try? await Task.sleep(nanoseconds: 250_000_000)
+        scrollPosition = target
     }
 
     private var rearrangeFooter: some View {
