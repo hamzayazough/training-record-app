@@ -21,6 +21,11 @@ final class ProgramDetailViewModel: ObservableObject {
         days.first(where: \.isToday)?.sessions ?? []
     }
 
+    /// Training days only — omit empty Rest placeholders that pad the calendar.
+    var scheduledDays: [DayRecord] {
+        days.filter { !$0.sessions.isEmpty }
+    }
+
     func load() async {
         isLoading = true
         errorMessage = nil

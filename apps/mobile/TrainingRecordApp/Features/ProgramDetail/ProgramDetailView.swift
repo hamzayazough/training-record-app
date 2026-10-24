@@ -10,11 +10,6 @@ struct ProgramDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text(viewModel.programType.title)
-                    .font(.largeTitle.weight(.bold))
-                    .foregroundStyle(APP_COLORS.NAVY)
-                    .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
-
                 if !viewModel.todaySessions.isEmpty {
                     todaySection
                 }
@@ -24,7 +19,7 @@ struct ProgramDetailView: View {
                     .foregroundStyle(APP_COLORS.NAVY)
                     .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
 
-                VerticalDayList(days: viewModel.days) { session in
+                VerticalDayList(days: viewModel.scheduledDays) { session in
                     viewModel.selectedSession = session
                 }
 
@@ -35,9 +30,11 @@ struct ProgramDetailView: View {
                         .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
                 }
             }
+            .padding(.top, 8)
             .padding(.bottom, 40)
         }
         .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
+        .navigationTitle(viewModel.programType.title)
         .navigationBarTitleDisplayMode(.inline)
         .task { await viewModel.load() }
         .sheet(item: $viewModel.feedbackExercise) { exercise in
