@@ -1,0 +1,14 @@
+---
+description: NestJS conventions for the API
+globs: apps/api/**/*.ts
+alwaysApply: false
+---
+
+# NestJS Conventions
+
+- Feature modules own controllers, services, DTOs
+- In-memory repositories; use cache-manager for calendar reads
+- Invalidate cache on complete, feedback, and move
+- Seed programs from `packages/programs` on boot
+- Enums/constants ALL_CAPS; classes/interfaces PascalCase
+- No DB in v1

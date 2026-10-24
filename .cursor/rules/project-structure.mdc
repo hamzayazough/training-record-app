@@ -1,0 +1,14 @@
+---
+description: Monorepo layout and architecture for the training record app
+alwaysApply: true
+---
+
+# Project Structure
+
+- `apps/mobile` — SwiftUI iOS client
+- `apps/api` — NestJS server (in-memory store + cache, no DB)
+- `packages/programs` — program seed JSON (source of truth)
+
+Keep API and mobile models aligned. Prefer shared seed JSON over hardcoding workouts in Swift.
+
+No comments unless a short doc comment clarifies a non-obvious function.

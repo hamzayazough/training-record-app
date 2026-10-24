@@ -1,0 +1,13 @@
+---
+description: SwiftUI conventions for the mobile app
+globs: apps/mobile/**/*.swift
+alwaysApply: false
+---
+
+# Swift Conventions
+
+- Feature folders under `Features/`; reusable views under `Components/`
+- Models in `Models/`, enums in `Enums/`, constants in `Constants/`
+- Network access only via `Services/`
+- Match design tokens (navy, green CTA, large corner radius, soft shadows)
+- Status colors: green GOOD, orange SO_SO, red BAD

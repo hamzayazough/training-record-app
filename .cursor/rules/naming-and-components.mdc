@@ -1,0 +1,12 @@
+---
+description: Naming conventions and component size limits
+alwaysApply: true
+---
+
+# Naming And Components
+
+- Constants and enums: ALL_CAPS style (`PROGRAM_TYPE`, `API_BASE_URL`)
+- Interfaces / classes / structs: PascalCase
+- Put constants, enums, and models in dedicated folders; import where used
+- Components: single responsibility, typically 70–200 lines
+- Prefer shared UI pieces over one-off duplicated layouts
