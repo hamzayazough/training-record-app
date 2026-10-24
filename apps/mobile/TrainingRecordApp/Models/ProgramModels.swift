@@ -167,6 +167,19 @@ struct DayRecord: Codable, Identifiable, Equatable {
         return overallStatus
     }
 
+    var cardBadge: DAY_CARD_BADGE? {
+        switch displayStatus {
+        case .BAD:
+            return .missed
+        case .GOOD:
+            return .completed
+        case .REST where isPast:
+            return .completed
+        default:
+            return nil
+        }
+    }
+
     static func todayIso() -> String {
         let formatter = DateFormatter()
         formatter.calendar = Calendar(identifier: .gregorian)

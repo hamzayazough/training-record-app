@@ -15,21 +15,10 @@ struct RearrangeScheduleView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Trainings")
-                            .font(.headline)
-                            .foregroundStyle(APP_COLORS.NAVY)
-                        Text("Drag a workout onto a day below. Empty days stay Rest.")
-                            .font(.footnote)
-                            .foregroundStyle(APP_COLORS.MUTED_TEXT)
-                    }
-
-                    unassignedPool
-
-                    VStack(alignment: .leading, spacing: 8) {
                         Text("This week")
                             .font(.headline)
                             .foregroundStyle(APP_COLORS.NAVY)
-                        Text("Starts from today")
+                        Text("Drag trainings from the tray onto a day. Empty days stay Rest.")
                             .font(.footnote)
                             .foregroundStyle(APP_COLORS.MUTED_TEXT)
                     }
@@ -43,9 +32,6 @@ struct RearrangeScheduleView: View {
                             onDrop: { dayNumber in
                                 viewModel.assign(dayNumber: dayNumber, to: day.weekday)
                             },
-                            onRemove: { dayNumber in
-                                viewModel.assign(dayNumber: dayNumber, to: nil)
-                            },
                             onDragStart: { viewModel.beginDrag($0) },
                             onDragEnd: { viewModel.endDrag() }
                         )
@@ -53,10 +39,15 @@ struct RearrangeScheduleView: View {
                 }
                 .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
                 .padding(.top, 12)
-                .padding(.bottom, 24)
+                .padding(.bottom, REARRANGE_LAYOUT.POOL_MAX_HEIGHT + 32)
             }
 
             footer
+        }
+        .overlay(alignment: .bottomTrailing) {
+            floatingTrainingsPool
+                .padding(.trailing, APP_LAYOUT.HORIZONTAL_PADDING)
+                .padding(.bottom, REARRANGE_LAYOUT.POOL_BOTTOM_OFFSET)
         }
         .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
         .navigationTitle("Rearrange")
@@ -69,29 +60,52 @@ struct RearrangeScheduleView: View {
         }
     }
 
-    private var unassignedPool: some View {
+    private var floatingTrainingsPool: some View {
         VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text("Trainings")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
+                Spacer(minLength: 0)
+                Button("Reset") {
+                    viewModel.resetTrainings()
+                }
+                .font(.caption.weight(.bold))
+                .foregroundStyle(APP_COLORS.ACCENT_ORANGE)
+                .disabled(viewModel.unassignedTrainings.count == viewModel.trainings.count)
+            }
+
             if viewModel.unassignedTrainings.isEmpty {
-                Text("All trainings placed")
-                    .font(.subheadline)
+                Text("All placed")
+                    .font(.caption.weight(.semibold))
                     .foregroundStyle(APP_COLORS.MUTED_TEXT)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(14)
+                    .padding(.vertical, 6)
             } else {
-                ForEach(viewModel.unassignedTrainings) { training in
-                    RearrangeDraggableChip(
-                        training: training,
-                        isDragging: viewModel.isDragging(training.dayNumber),
-                        onDragStart: { viewModel.beginDrag(training.dayNumber) },
-                        onDragEnd: { viewModel.endDrag() }
-                    )
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 8) {
+                        ForEach(viewModel.unassignedTrainings) { training in
+                            RearrangeDraggableChip(
+                                training: training,
+                                isDragging: viewModel.isDragging(training.dayNumber),
+                                onDragStart: { viewModel.beginDrag(training.dayNumber) },
+                                onDragEnd: { viewModel.endDrag() }
+                            )
+                        }
+                    }
                 }
+                .frame(maxHeight: REARRANGE_LAYOUT.POOL_MAX_HEIGHT)
             }
         }
         .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(APP_COLORS.STATUS_REST.opacity(0.65))
-        .clipShape(RoundedRectangle(cornerRadius: APP_LAYOUT.CORNER_RADIUS, style: .continuous))
+        .frame(width: REARRANGE_LAYOUT.POOL_WIDTH, alignment: .leading)
+        .background(APP_COLORS.SURFACE)
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .stroke(Color.black.opacity(0.06), lineWidth: 1)
+        )
+        .shadow(color: .black.opacity(0.14), radius: 16, y: 6)
         .dropDestination(for: REARRANGE_DRAG.self) { items, _ in
             guard let item = items.first else { return false }
             viewModel.assign(dayNumber: item.dayNumber, to: nil)

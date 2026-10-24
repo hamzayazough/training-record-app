@@ -94,11 +94,12 @@ function sessionSummary(sessions: ScheduledSession[]): string {
 }
 
 function trainingLabel(template: SessionTemplate): string {
-  const names = template.exercises
-    .map((e) => e.name)
-    .filter((name) => !['Strength A', 'Strength B'].includes(name));
-  if (names.length > 0) return names.join(' · ');
-  return template.sessionLabel;
+  return template.sessionLabel
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
 function shortWeekdayLabel(weekday: WEEKDAY): string {

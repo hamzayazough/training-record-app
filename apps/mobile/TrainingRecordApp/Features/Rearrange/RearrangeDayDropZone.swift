@@ -6,7 +6,6 @@ struct RearrangeDayDropZone: View {
     let isToday: Bool
     let draggingDayNumber: Int?
     let onDrop: (Int) -> Void
-    let onRemove: (Int) -> Void
     let onDragStart: (Int) -> Void
     let onDragEnd: () -> Void
 
@@ -45,11 +44,6 @@ struct RearrangeDayDropZone: View {
                         onDragStart: { onDragStart(training.dayNumber) },
                         onDragEnd: onDragEnd
                     )
-                    .contextMenu {
-                        Button("Remove", role: .destructive) {
-                            onRemove(training.dayNumber)
-                        }
-                    }
                 }
             }
         }

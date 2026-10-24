@@ -5,6 +5,7 @@ enum APP_COLORS {
     static let SURFACE = Color.white
     static let NAVY = Color(red: 0.07, green: 0.11, blue: 0.20)
     static let PRIMARY_GREEN = Color(red: 0.13, green: 0.72, blue: 0.38)
+    static let TODAY_BLUE = Color(red: 0.20, green: 0.48, blue: 0.96)
     static let ACCENT_ORANGE = Color(red: 1.0, green: 0.55, blue: 0.20)
     static let ACCENT_PURPLE = Color(red: 0.45, green: 0.35, blue: 0.85)
     static let MUTED_TEXT = Color(red: 0.45, green: 0.48, blue: 0.55)

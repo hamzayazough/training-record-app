@@ -11,7 +11,7 @@ struct RearrangeDraggableChip: View {
             .opacity(isDragging ? 0 : 1)
             .draggable(REARRANGE_DRAG.training(training.dayNumber)) {
                 RearrangeTrainingChip(label: training.label)
-                    .frame(width: 260)
+                    .frame(width: REARRANGE_LAYOUT.POOL_WIDTH - 24)
                     .onAppear(perform: onDragStart)
                     .onDisappear(perform: onDragEnd)
             }

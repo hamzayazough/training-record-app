@@ -4,7 +4,6 @@ import Foundation
 final class ProgramDetailViewModel: ObservableObject {
     @Published var days: [DayRecord] = []
     @Published var feedbackExercise: ScheduledExercise?
-    @Published var moveSessionTarget: ScheduledSession?
     @Published var errorMessage: String?
     @Published var isLoading = false
     @Published var isLoadingPast = false
@@ -193,20 +192,6 @@ final class ProgramDetailViewModel: ObservableObject {
             await refreshVisibleRange()
         } catch {
             errorMessage = "Could not save feedback."
-        }
-    }
-
-    func moveSelectedSession(toWeekday weekday: String) async {
-        guard let session = moveSessionTarget else { return }
-        do {
-            _ = try await api.moveSession(
-                id: session.id,
-                request: MoveSessionRequest(targetDate: nil, targetWeekday: weekday)
-            )
-            moveSessionTarget = nil
-            await refreshVisibleRange()
-        } catch {
-            errorMessage = "Could not move session."
         }
     }
 

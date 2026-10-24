@@ -48,10 +48,17 @@ final class RearrangeViewModel: ObservableObject {
             let layout = try await api.fetchRearrangeLayout(type: programType)
             trainings = layout.trainings
             weekDays = layout.weekDays
-            assignmentByDayNumber = [:]
+            assignmentByDayNumber = Dictionary(
+                uniqueKeysWithValues: layout.trainings.map { ($0.dayNumber, $0.currentWeekday) }
+            )
         } catch {
             errorMessage = "Could not load week layout."
         }
+    }
+
+    func resetTrainings() {
+        assignmentByDayNumber = [:]
+        errorMessage = nil
     }
 
     func assign(dayNumber: Int, to weekday: WEEKDAY?) {

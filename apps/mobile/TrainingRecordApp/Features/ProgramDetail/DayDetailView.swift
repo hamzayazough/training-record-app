@@ -20,16 +20,6 @@ struct DayDetailView: View {
         .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
         .navigationTitle(day?.dayTitle ?? "Day")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            if let day, day.isToday, let session = day.sessions.first {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Move") {
-                        viewModel.moveSessionTarget = session
-                    }
-                    .foregroundStyle(APP_COLORS.ACCENT_ORANGE)
-                }
-            }
-        }
         .sheet(item: $viewModel.feedbackExercise) { exercise in
             FeedbackBottomSheet(
                 exercise: exercise,
@@ -38,18 +28,6 @@ struct DayDetailView: View {
                 },
                 onCancel: { viewModel.feedbackExercise = nil }
             )
-        }
-        .sheet(item: $viewModel.moveSessionTarget) { session in
-            MoveSessionSheet(
-                session: session,
-                onMove: { weekday in
-                    Task { await viewModel.moveSelectedSession(toWeekday: weekday) }
-                },
-                onCancel: { viewModel.moveSessionTarget = nil }
-            )
-            .presentationDetents([.height(420), .medium])
-            .presentationDragIndicator(.visible)
-            .presentationBackground(Color.white)
         }
     }
 
