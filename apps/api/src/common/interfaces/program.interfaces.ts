@@ -88,3 +88,25 @@ export interface ProgramSummary {
   currentWeek: number;
   startDate: string;
 }
+
+export interface RearrangeTraining {
+  dayNumber: number;
+  label: string;
+  currentWeekday: WEEKDAY;
+}
+
+export interface RearrangeWeekDay {
+  date: string;
+  weekday: WEEKDAY;
+  shortLabel: string;
+}
+
+export interface RearrangeLayout {
+  trainings: RearrangeTraining[];
+  weekDays: RearrangeWeekDay[];
+}
+
+export interface RearrangeAssignment {
+  dayNumber: number;
+  weekday: WEEKDAY;
+}

@@ -47,6 +47,14 @@ final class TrainingAPIClient {
         try await patch("/sessions/\(id)/move", body: request)
     }
 
+    func fetchRearrangeLayout(type: PROGRAM_TYPE) async throws -> RearrangeLayout {
+        try await get("/programs/\(type.rawValue)/rearrange")
+    }
+
+    func saveRearrange(type: PROGRAM_TYPE, request: RearrangeRequest) async throws -> RearrangeLayout {
+        try await post("/programs/\(type.rawValue)/rearrange", body: request)
+    }
+
     private func get<T: Decodable>(_ path: String) async throws -> T {
         let request = try makeRequest(path: path, method: "GET")
         return try await send(request)

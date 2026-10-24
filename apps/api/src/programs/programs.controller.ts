@@ -9,6 +9,7 @@ import {
 } from '@nestjs/common';
 import { FeedbackDto } from './dto/feedback.dto';
 import { MoveSessionDto } from './dto/move-session.dto';
+import { RearrangeDto } from './dto/rearrange.dto';
 import { ProgramsService } from './programs.service';
 
 @Controller()
@@ -41,6 +42,16 @@ export class ProgramsController {
   @Get('programs/:type/detail')
   getDetail(@Param('type') type: string) {
     return this.programsService.getDetail(type);
+  }
+
+  @Get('programs/:type/rearrange')
+  getRearrangeLayout(@Param('type') type: string) {
+    return this.programsService.getRearrangeLayout(type);
+  }
+
+  @Post('programs/:type/rearrange')
+  rearrangeSchedule(@Param('type') type: string, @Body() dto: RearrangeDto) {
+    return this.programsService.rearrangeSchedule(type, dto);
   }
 
   @Patch('sessions/:id/move')

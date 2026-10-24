@@ -15,7 +15,9 @@ import {
 } from '../common/enums/weekday.enum';
 import { FeedbackDto } from './dto/feedback.dto';
 import { MoveSessionDto } from './dto/move-session.dto';
+import { RearrangeDto } from './dto/rearrange.dto';
 import { MemoryStore } from '../store/memory.store';
+import { RearrangeAssignment } from '../common/interfaces/program.interfaces';
 
 function parseProgramType(type: string): PROGRAM_TYPE {
   const upper = type.toUpperCase();
@@ -59,6 +61,25 @@ export class ProgramsService {
     const result = this.store.getDetail(programType);
     await this.cache.set(key, result, CACHE_TTL_MS);
     return result;
+  }
+
+  getRearrangeLayout(type: string) {
+    const programType = parseProgramType(type);
+    return this.store.getRearrangeLayout(programType);
+  }
+
+  async rearrangeSchedule(type: string, dto: RearrangeDto) {
+    const programType = parseProgramType(type);
+    const assignments: RearrangeAssignment[] = dto.assignments.map((item) => {
+      const weekday = item.weekday.toUpperCase() as WEEKDAY;
+      if (!(weekday in WEEKDAY_INDEX)) {
+        throw new BadRequestException('INVALID_WEEKDAY');
+      }
+      return { dayNumber: item.dayNumber, weekday };
+    });
+    this.store.rearrangeSchedule(programType, assignments);
+    await this.invalidateCache();
+    return this.store.getRearrangeLayout(programType);
   }
 
   async moveSession(sessionId: string, dto: MoveSessionDto) {

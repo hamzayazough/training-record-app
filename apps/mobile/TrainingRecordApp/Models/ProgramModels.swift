@@ -191,3 +191,33 @@ struct MoveSessionRequest: Codable {
     let targetDate: String?
     let targetWeekday: String?
 }
+
+struct RearrangeTraining: Codable, Identifiable, Hashable {
+    let dayNumber: Int
+    let label: String
+    var currentWeekday: WEEKDAY
+
+    var id: Int { dayNumber }
+}
+
+struct RearrangeWeekDay: Codable, Identifiable, Hashable {
+    let date: String
+    let weekday: WEEKDAY
+    let shortLabel: String
+
+    var id: String { date }
+}
+
+struct RearrangeLayout: Codable {
+    let trainings: [RearrangeTraining]
+    let weekDays: [RearrangeWeekDay]
+}
+
+struct RearrangeAssignment: Codable {
+    let dayNumber: Int
+    let weekday: WEEKDAY
+}
+
+struct RearrangeRequest: Codable {
+    let assignments: [RearrangeAssignment]
+}

@@ -34,7 +34,10 @@ struct ProgramDetailView: View {
                     }
                 }
                 .padding(.top, 8)
-                .padding(.bottom, 40)
+                .padding(.bottom, 24)
+            }
+            .safeAreaInset(edge: .bottom) {
+                rearrangeFooter
             }
             .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
             .navigationTitle(viewModel.programType.title)
@@ -43,6 +46,10 @@ struct ProgramDetailView: View {
                 switch route {
                 case .dayDetail(let dayId):
                     DayDetailView(viewModel: viewModel, dayId: dayId)
+                case .rearrange:
+                    RearrangeScheduleView(programType: viewModel.programType) {
+                        Task { await viewModel.load() }
+                    }
                 }
             }
             .task {
@@ -60,5 +67,26 @@ struct ProgramDetailView: View {
                 }
             }
         }
+    }
+
+    private var rearrangeFooter: some View {
+        NavigationLink(value: PROGRAM_ROUTE.rearrange) {
+            Text("Rearrange training days")
+                .font(.headline.weight(.semibold))
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 16)
+                .background(APP_COLORS.NAVY)
+                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
+        .padding(.top, 12)
+        .padding(.bottom, 10)
+        .background(
+            APP_COLORS.SURFACE
+                .shadow(color: .black.opacity(0.08), radius: 12, y: -4)
+                .ignoresSafeArea(edges: .bottom)
+        )
     }
 }
