@@ -44,7 +44,7 @@ struct CombinedDayDetailView: View {
 
     private func content(for day: DayRecord) -> some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .leading, spacing: 24) {
                 if day.sessions.isEmpty {
                     Text("Rest day — no training scheduled.")
                         .font(.subheadline)
@@ -75,15 +75,9 @@ struct CombinedDayDetailView: View {
         isInteractive: Bool
     ) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(type.title)
-                .font(.headline.weight(.bold))
-                .foregroundStyle(APP_COLORS.NAVY)
+            ProgramSectionHeader(type: type, sessions: sessions)
 
             ForEach(sessions) { session in
-                Text(session.shortTrainingLabel)
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
-
                 ForEach(session.exercises) { exercise in
                     ExerciseRow(
                         exercise: exercise,

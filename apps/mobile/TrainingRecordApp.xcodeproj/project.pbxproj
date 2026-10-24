@@ -19,6 +19,7 @@
 		3ECEE8114EB040A6A02C7A09 /* HorizontalDayStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */; };
 		BD7782BAEA1A4845B2937D8F /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585530B151EA4800AE3BEA51 /* PrimaryButton.swift */; };
 		25C8E030571841CA9C54C948 /* ProgramHeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80047CECC99543AAB52C1CB0 /* ProgramHeroCard.swift */; };
+		E5F647890123456789AB0001 /* ProgramSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F647890123456789AB0002 /* ProgramSectionHeader.swift */; };
 		09B50A71EBC3484E8B71B17D /* StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE41D5E4F94A49894D0474 /* StatusDot.swift */; };
 		3F7A63D349C546758794CB98 /* VerticalDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93925BE45024EA190D07EB7 /* VerticalDayList.swift */; };
 		FFEF84B7D240415CBCD4595A /* API_CONFIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129B90122124C63973902E9 /* API_CONFIG.swift */; };
@@ -61,6 +62,7 @@
 		33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/HorizontalDayStrip.swift"; sourceTree = SOURCE_ROOT; };
 		585530B151EA4800AE3BEA51 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/PrimaryButton.swift"; sourceTree = SOURCE_ROOT; };
 		80047CECC99543AAB52C1CB0 /* ProgramHeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ProgramHeroCard.swift"; sourceTree = SOURCE_ROOT; };
+		E5F647890123456789AB0002 /* ProgramSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ProgramSectionHeader.swift"; sourceTree = SOURCE_ROOT; };
 		4CBE41D5E4F94A49894D0474 /* StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/StatusDot.swift"; sourceTree = SOURCE_ROOT; };
 		F93925BE45024EA190D07EB7 /* VerticalDayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/VerticalDayList.swift"; sourceTree = SOURCE_ROOT; };
 		1129B90122124C63973902E9 /* API_CONFIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Constants/API_CONFIG.swift"; sourceTree = SOURCE_ROOT; };
@@ -131,6 +133,7 @@
 				33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */,
 				585530B151EA4800AE3BEA51 /* PrimaryButton.swift */,
 				80047CECC99543AAB52C1CB0 /* ProgramHeroCard.swift */,
+				E5F647890123456789AB0002 /* ProgramSectionHeader.swift */,
 				4CBE41D5E4F94A49894D0474 /* StatusDot.swift */,
 				F93925BE45024EA190D07EB7 /* VerticalDayList.swift */,
 				1129B90122124C63973902E9 /* API_CONFIG.swift */,
@@ -239,6 +242,7 @@ AEB3CD66D10D4BA4911324A4 /* DayCard.swift in Sources */,
 3ECEE8114EB040A6A02C7A09 /* HorizontalDayStrip.swift in Sources */,
 BD7782BAEA1A4845B2937D8F /* PrimaryButton.swift in Sources */,
 25C8E030571841CA9C54C948 /* ProgramHeroCard.swift in Sources */,
+				E5F647890123456789AB0001 /* ProgramSectionHeader.swift in Sources */,
 09B50A71EBC3484E8B71B17D /* StatusDot.swift in Sources */,
 3F7A63D349C546758794CB98 /* VerticalDayList.swift in Sources */,
 FFEF84B7D240415CBCD4595A /* API_CONFIG.swift in Sources */,
