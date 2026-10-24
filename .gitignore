@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+.DS_Store
+*.xcuserstate
+xcuserdata/
+DerivedData/
+.env
+*.log
+apps/api/coverage/
+apps/mobile/.build/
