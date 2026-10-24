@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3FDAFA648F34C4C84127DCB /* ScheduleDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */; };
 		E513A0CB2F9E4520B919F687 /* TrainingRecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */; };
 		A4DEF8C91EC34076854F9E96 /* AppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A0A260BB14B8D922B89FE /* AppHeader.swift */; };
 		AEB3CD66D10D4BA4911324A4 /* DayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C8FB1B331420F817D5DC2 /* DayCard.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/ScheduleDayCard.swift"; sourceTree = SOURCE_ROOT; };
 		BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/App/TrainingRecordApp.swift"; sourceTree = SOURCE_ROOT; };
 		336A0A260BB14B8D922B89FE /* AppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/AppHeader.swift"; sourceTree = SOURCE_ROOT; };
 		499C8FB1B331420F817D5DC2 /* DayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingRecordApp/Components/DayCard.swift"; sourceTree = SOURCE_ROOT; };
@@ -95,6 +97,7 @@
 				BF7CEEF0624F4748B9A9537F /* TrainingRecordApp.swift */,
 				336A0A260BB14B8D922B89FE /* AppHeader.swift */,
 				499C8FB1B331420F817D5DC2 /* DayCard.swift */,
+				DECE8DCDAB1B438893073381 /* ScheduleDayCard.swift */,
 				F41CBFF75CBF4EFEBD748940 /* ExerciseRow.swift */,
 				33016B27611F455C9326B5A2 /* HorizontalDayStrip.swift */,
 				585530B151EA4800AE3BEA51 /* PrimaryButton.swift */,
@@ -188,6 +191,7 @@
 E513A0CB2F9E4520B919F687 /* TrainingRecordApp.swift in Sources */,
 A4DEF8C91EC34076854F9E96 /* AppHeader.swift in Sources */,
 AEB3CD66D10D4BA4911324A4 /* DayCard.swift in Sources */,
+				A3FDAFA648F34C4C84127DCB /* ScheduleDayCard.swift in Sources */,
 3C654EBA4E2E432EA3E2C172 /* ExerciseRow.swift in Sources */,
 3ECEE8114EB040A6A02C7A09 /* HorizontalDayStrip.swift in Sources */,
 BD7782BAEA1A4845B2937D8F /* PrimaryButton.swift in Sources */,

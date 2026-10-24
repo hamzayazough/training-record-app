@@ -3,7 +3,6 @@ import Foundation
 @MainActor
 final class ProgramDetailViewModel: ObservableObject {
     @Published var days: [DayRecord] = []
-    @Published var selectedSession: ScheduledSession?
     @Published var feedbackExercise: ScheduledExercise?
     @Published var moveSessionTarget: ScheduledSession?
     @Published var errorMessage: String?
@@ -17,11 +16,6 @@ final class ProgramDetailViewModel: ObservableObject {
         self.api = api
     }
 
-    var todaySessions: [ScheduledSession] {
-        days.first(where: \.isToday)?.sessions ?? []
-    }
-
-    /// Training days only — omit empty Rest placeholders that pad the calendar.
     var scheduledDays: [DayRecord] {
         days.filter { !$0.sessions.isEmpty }
     }
@@ -32,10 +26,6 @@ final class ProgramDetailViewModel: ObservableObject {
         defer { isLoading = false }
         do {
             days = try await api.fetchDetail(type: programType)
-            if let selected = selectedSession,
-               let refreshed = days.flatMap(\.sessions).first(where: { $0.id == selected.id }) {
-                selectedSession = refreshed
-            }
         } catch {
             errorMessage = "Failed to load program details."
         }

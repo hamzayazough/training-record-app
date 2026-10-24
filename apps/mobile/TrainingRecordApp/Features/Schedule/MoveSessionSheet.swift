@@ -15,37 +15,48 @@ struct MoveSessionSheet: View {
     }
 
     var body: some View {
-        VStack(spacing: 18) {
-            Capsule()
-                .fill(Color.gray.opacity(0.35))
-                .frame(width: 42, height: 5)
-                .padding(.top, 10)
+        VStack(alignment: .leading, spacing: 20) {
+            VStack(spacing: 6) {
+                Text("Move session")
+                    .font(.title3.weight(.bold))
+                    .foregroundStyle(APP_COLORS.NAVY)
+                Text(session.sessionLabel)
+                    .font(.subheadline)
+                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
+            }
+            .frame(maxWidth: .infinity)
 
-            Text("Move session")
-                .font(.title3.weight(.bold))
-                .foregroundStyle(APP_COLORS.NAVY)
-
-            Text(session.sessionLabel)
-                .font(.subheadline)
-                .foregroundStyle(APP_COLORS.MUTED_TEXT)
-
-            Picker("Weekday", selection: $selectedWeekday) {
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                 ForEach(WEEKDAY.allCases, id: \.self) { day in
-                    Text(day.rawValue.capitalized).tag(day)
+                    Button {
+                        selectedWeekday = day
+                    } label: {
+                        Text(day.rawValue.capitalized)
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(selectedWeekday == day ? .white : APP_COLORS.NAVY)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(selectedWeekday == day ? APP_COLORS.NAVY : APP_COLORS.BACKGROUND)
+                            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
                 }
             }
-            .pickerStyle(.wheel)
-            .frame(height: 140)
+
+            Spacer(minLength: 0)
 
             PrimaryButton(title: "Move to \(selectedWeekday.rawValue.capitalized)") {
                 onMove(selectedWeekday.rawValue)
             }
 
             Button("Cancel", action: onCancel)
+                .frame(maxWidth: .infinity)
                 .foregroundStyle(APP_COLORS.MUTED_TEXT)
-                .padding(.bottom, 8)
         }
         .padding(.horizontal, 20)
-        .background(APP_COLORS.SURFACE)
+        .padding(.top, 28)
+        .padding(.bottom, 16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.white.ignoresSafeArea())
     }
 }

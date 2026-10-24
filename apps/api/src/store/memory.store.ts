@@ -53,10 +53,25 @@ function dateForWeekdayInWeek(weekStartMonday: Date, weekday: WEEKDAY): Date {
   return addDays(weekStartMonday, offset);
 }
 
-function deriveDayStatus(sessions: ScheduledSession[]): PERFORMANCE_STATUS {
+function deriveDayStatus(
+  sessions: ScheduledSession[],
+  dateIso: string,
+): PERFORMANCE_STATUS {
   if (sessions.length === 0) return PERFORMANCE_STATUS.REST;
-  const statuses = sessions.flatMap((s) => s.exercises.map((e) => e.status));
-  const actionable = statuses.filter((s) => s !== PERFORMANCE_STATUS.PENDING);
+  const today = toIsoDate(new Date());
+  const exercises = sessions.flatMap((s) => s.exercises);
+  const isPast = dateIso < today;
+  if (
+    isPast &&
+    exercises.some(
+      (e) => !e.completed || e.status === PERFORMANCE_STATUS.PENDING,
+    )
+  ) {
+    return PERFORMANCE_STATUS.BAD;
+  }
+  const actionable = exercises
+    .map((e) => e.status)
+    .filter((s) => s !== PERFORMANCE_STATUS.PENDING);
   if (actionable.length === 0) return PERFORMANCE_STATUS.PENDING;
   if (actionable.every((s) => s === PERFORMANCE_STATUS.GOOD)) {
     return PERFORMANCE_STATUS.GOOD;
@@ -204,7 +219,7 @@ export class MemoryStore implements OnModuleInit {
         date: iso,
         weekday: weekdayFromDate(date),
         sessions,
-        overallStatus: deriveDayStatus(sessions),
+        overallStatus: deriveDayStatus(sessions, iso),
         summary: sessionSummary(sessions),
       });
     }

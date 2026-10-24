@@ -6,6 +6,7 @@ struct FeedbackBottomSheet: View {
     let onCancel: () -> Void
 
     @State private var selectedStatus: PERFORMANCE_STATUS = .GOOD
+    @State private var detent: PresentationDetent = .height(300)
     @State private var weight = ""
     @State private var reps = ""
     @State private var sets = ""
@@ -14,21 +15,21 @@ struct FeedbackBottomSheet: View {
     @State private var duration = ""
     @State private var notes = ""
 
+    private var showsAdjustmentFields: Bool {
+        selectedStatus == .SO_SO
+    }
+
     var body: some View {
         VStack(spacing: 20) {
-            Capsule()
-                .fill(Color.gray.opacity(0.35))
-                .frame(width: 42, height: 5)
-                .padding(.top, 10)
-
             Text("How did it go?")
                 .font(.title3.weight(.bold))
                 .foregroundStyle(APP_COLORS.NAVY)
 
-            Text(exercise.name)
+            Text(exercise.prescription.isEmpty ? exercise.name : exercise.prescription)
                 .font(.subheadline)
                 .foregroundStyle(APP_COLORS.MUTED_TEXT)
                 .multilineTextAlignment(.center)
+                .lineLimit(3)
 
             HStack(spacing: 10) {
                 statusChip(.GOOD, title: "Good")
@@ -36,49 +37,63 @@ struct FeedbackBottomSheet: View {
                 statusChip(.BAD, title: "Missed")
             }
 
-            if selectedStatus != .GOOD {
-                VStack(spacing: 12) {
-                    if exercise.metrics.contains("WEIGHT") {
-                        field("Weight / load", text: $weight)
+            if showsAdjustmentFields {
+                ScrollView {
+                    VStack(spacing: 12) {
+                        if exercise.metrics.contains("WEIGHT") {
+                            field("Weight / load", text: $weight)
+                        }
+                        if exercise.metrics.contains("REPS") {
+                            field("Reps", text: $reps)
+                        }
+                        if exercise.metrics.contains("SETS") {
+                            field("Sets", text: $sets)
+                        }
+                        if exercise.metrics.contains("DISTANCE") {
+                            field("Distance", text: $distance)
+                        }
+                        if exercise.metrics.contains("PACE") {
+                            field("Pace", text: $pace)
+                        }
+                        if exercise.metrics.contains("DURATION") {
+                            field("Time / duration", text: $duration)
+                        }
+                        field("Notes", text: $notes)
                     }
-                    if exercise.metrics.contains("REPS") {
-                        field("Reps", text: $reps)
-                    }
-                    if exercise.metrics.contains("SETS") {
-                        field("Sets", text: $sets)
-                    }
-                    if exercise.metrics.contains("DISTANCE") {
-                        field("Distance", text: $distance)
-                    }
-                    if exercise.metrics.contains("PACE") {
-                        field("Pace", text: $pace)
-                    }
-                    if exercise.metrics.contains("DURATION") {
-                        field("Time / duration", text: $duration)
-                    }
-                    field("Notes", text: $notes)
                 }
             }
 
             PrimaryButton(title: "Confirm") {
-                let adjustments = ExerciseAdjustment(
-                    weight: weight.nilIfEmpty,
-                    reps: reps.nilIfEmpty,
-                    sets: sets.nilIfEmpty,
-                    distance: distance.nilIfEmpty,
-                    pace: pace.nilIfEmpty,
-                    duration: duration.nilIfEmpty,
-                    notes: notes.nilIfEmpty
-                )
+                let adjustments = showsAdjustmentFields
+                    ? ExerciseAdjustment(
+                        weight: weight.nilIfEmpty,
+                        reps: reps.nilIfEmpty,
+                        sets: sets.nilIfEmpty,
+                        distance: distance.nilIfEmpty,
+                        pace: pace.nilIfEmpty,
+                        duration: duration.nilIfEmpty,
+                        notes: notes.nilIfEmpty
+                    )
+                    : ExerciseAdjustment()
                 onSubmit(selectedStatus, adjustments)
             }
 
             Button("Cancel", action: onCancel)
                 .foregroundStyle(APP_COLORS.MUTED_TEXT)
-                .padding(.bottom, 8)
         }
         .padding(.horizontal, 20)
-        .background(APP_COLORS.SURFACE)
+        .padding(.top, 28)
+        .padding(.bottom, 16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.white.ignoresSafeArea())
+        .presentationDetents([.height(300), .large], selection: $detent)
+        .presentationDragIndicator(.visible)
+        .presentationBackground(Color.white)
+        .onChange(of: selectedStatus) { _, status in
+            withAnimation(.snappy) {
+                detent = status == .SO_SO ? .large : .height(300)
+            }
+        }
     }
 
     private func statusChip(_ status: PERFORMANCE_STATUS, title: String) -> some View {

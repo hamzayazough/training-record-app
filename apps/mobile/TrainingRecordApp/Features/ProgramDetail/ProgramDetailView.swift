@@ -9,19 +9,16 @@ struct ProgramDetailView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                if !viewModel.todaySessions.isEmpty {
-                    todaySection
-                }
-
-                Text("Schedule")
-                    .font(.title3.weight(.bold))
-                    .foregroundStyle(APP_COLORS.NAVY)
-                    .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
-
-                VerticalDayList(days: viewModel.scheduledDays) { session in
-                    viewModel.selectedSession = session
-                }
+            VStack(alignment: .leading, spacing: 16) {
+                VerticalDayList(
+                    days: viewModel.scheduledDays,
+                    onToggleExercise: { exercise in
+                        Task { await viewModel.completeExercise(exercise) }
+                    },
+                    onMoveSession: { session in
+                        viewModel.moveSessionTarget = session
+                    }
+                )
 
                 if let errorMessage = viewModel.errorMessage {
                     Text(errorMessage)
@@ -45,7 +42,6 @@ struct ProgramDetailView: View {
                 },
                 onCancel: { viewModel.feedbackExercise = nil }
             )
-            .presentationDetents([.medium, .large])
         }
         .sheet(item: $viewModel.moveSessionTarget) { session in
             MoveSessionSheet(
@@ -55,85 +51,9 @@ struct ProgramDetailView: View {
                 },
                 onCancel: { viewModel.moveSessionTarget = nil }
             )
-            .presentationDetents([.medium])
-        }
-        .sheet(item: $viewModel.selectedSession) { session in
-            sessionDetail(session)
-                .presentationDetents([.medium, .large])
-        }
-    }
-
-    private var todaySection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Today")
-                .font(.title3.weight(.bold))
-                .foregroundStyle(APP_COLORS.NAVY)
-                .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
-
-            ForEach(viewModel.todaySessions) { session in
-                VStack(alignment: .leading, spacing: 10) {
-                    HStack {
-                        Text(session.sessionLabel)
-                            .font(.headline)
-                            .foregroundStyle(APP_COLORS.NAVY)
-                        Spacer()
-                        Button("Move") {
-                            viewModel.moveSessionTarget = session
-                        }
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(APP_COLORS.ACCENT_ORANGE)
-                    }
-                    .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
-
-                    ForEach(session.exercises) { exercise in
-                        ExerciseRow(
-                            exercise: exercise,
-                            isInteractive: true,
-                            onToggle: {
-                                Task { await viewModel.completeExercise(exercise) }
-                            }
-                        )
-                        .padding(.horizontal, APP_LAYOUT.HORIZONTAL_PADDING)
-                    }
-                }
-            }
-        }
-    }
-
-    private func sessionDetail(_ session: ScheduledSession) -> some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(session.sessionLabel)
-                        .font(.title2.weight(.bold))
-                        .foregroundStyle(APP_COLORS.NAVY)
-                    Text("\(session.weekday.rawValue.capitalized) · Week \(session.weekNumber)")
-                        .font(.subheadline)
-                        .foregroundStyle(APP_COLORS.MUTED_TEXT)
-
-                    ForEach(session.exercises) { exercise in
-                        ExerciseRow(
-                            exercise: exercise,
-                            isInteractive: session.date == DayRecord.todayIso(),
-                            onToggle: {
-                                Task { await viewModel.completeExercise(exercise) }
-                            }
-                        )
-                    }
-
-                    PrimaryButton(title: "Move session", background: APP_COLORS.NAVY) {
-                        viewModel.selectedSession = nil
-                        viewModel.moveSessionTarget = session
-                    }
-                }
-                .padding(20)
-            }
-            .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { viewModel.selectedSession = nil }
-                }
-            }
+            .presentationDetents([.height(420), .medium])
+            .presentationDragIndicator(.visible)
+            .presentationBackground(Color.white)
         }
     }
 }

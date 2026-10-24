@@ -12,7 +12,7 @@ struct DayCard: View {
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(isHighlighted ? .white.opacity(0.85) : APP_COLORS.MUTED_TEXT)
                 Spacer()
-                StatusDot(status: day.overallStatus, size: 8)
+                StatusDot(status: day.displayStatus, size: 8)
             }
             Text(dayLabel)
                 .font(.system(size: isCompact ? 22 : 28, weight: .bold))
@@ -43,7 +43,7 @@ struct DayCard: View {
 
     private var cardBackground: Color {
         if isHighlighted { return APP_COLORS.PRIMARY_GREEN }
-        switch day.overallStatus {
+        switch day.displayStatus {
         case .GOOD: return APP_COLORS.STATUS_GOOD.opacity(0.12)
         case .SO_SO: return APP_COLORS.STATUS_SO_SO.opacity(0.12)
         case .BAD: return APP_COLORS.STATUS_BAD.opacity(0.12)

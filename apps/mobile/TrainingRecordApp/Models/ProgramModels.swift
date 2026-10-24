@@ -57,6 +57,29 @@ struct DayRecord: Codable, Identifiable, Equatable {
         date == Self.todayIso()
     }
 
+    var isPast: Bool {
+        date < Self.todayIso()
+    }
+
+    var allExercises: [ScheduledExercise] {
+        sessions.flatMap(\.exercises)
+    }
+
+    /// Past incomplete days surface as BAD; otherwise derive from exercise feedback.
+    var displayStatus: PERFORMANCE_STATUS {
+        let exercises = allExercises
+        if exercises.isEmpty { return .REST }
+        if isPast && exercises.contains(where: { !$0.completed || $0.status == .PENDING }) {
+            return .BAD
+        }
+        let actionable = exercises.map(\.status).filter { $0 != .PENDING }
+        if actionable.isEmpty { return .PENDING }
+        if actionable.contains(.BAD) { return .BAD }
+        if actionable.contains(.SO_SO) { return .SO_SO }
+        if actionable.allSatisfy({ $0 == .GOOD }) { return .GOOD }
+        return overallStatus
+    }
+
     static func todayIso() -> String {
         let formatter = DateFormatter()
         formatter.calendar = Calendar(identifier: .gregorian)
