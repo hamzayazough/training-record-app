@@ -1,0 +1,5020 @@
+{
+  "programType": "ENDURANCE",
+  "title": "52-Week Dual-Goal Running",
+  "totalWeeks": 52,
+  "defaultWeekdayByDayNumber": {
+    "1": "TUESDAY",
+    "2": "THURSDAY",
+    "3": "SATURDAY",
+    "4": "SUNDAY",
+    "5": "MONDAY"
+  },
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "37 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "37 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "7 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "7 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "38 min easy bike, optional if recovered.",
+              "prescription": "38 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "40 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "40 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "8 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "40 min easy bike, optional if recovered.",
+              "prescription": "40 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "5 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "42 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "42 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "8 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "43 min easy bike, optional if recovered.",
+              "prescription": "43 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "32 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "32 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "6 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "6 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "33 min easy bike, optional if recovered.",
+              "prescription": "33 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "5 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "42 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "42 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "8 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "43 min easy bike, optional if recovered.",
+              "prescription": "43 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "5 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "45 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "45 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "9 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "9 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "45 min easy bike, optional if recovered.",
+              "prescription": "45 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "6 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "47 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "47 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "9 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "9 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "48 min easy bike, optional if recovered.",
+              "prescription": "48 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "prescription": "4 km easy run at conversational effort (typically 6:30-7:10/km); then Strength A, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "35 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "prescription": "35 min easy bike (RPE 3-4/10); then Strength B, light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "7 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "prescription": "7 km easy run (walk breaks allowed); then 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "35 min easy bike, optional if recovered.",
+              "prescription": "35 min easy bike, optional if recovered.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "40 min easy bike; Strength B.",
+              "prescription": "40 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run, conversational pace.",
+              "prescription": "3 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "8 km easy long run; 5-10 min mobility.",
+              "prescription": "8 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "40 min optional easy bike.",
+              "prescription": "40 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "42 min easy bike; Strength B.",
+              "prescription": "42 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run, conversational pace.",
+              "prescription": "3 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "9 km easy long run; 5-10 min mobility.",
+              "prescription": "9 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "43 min optional easy bike.",
+              "prescription": "43 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 11,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "45 min easy bike; Strength B.",
+              "prescription": "45 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run, conversational pace.",
+              "prescription": "3 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "10 km easy long run; 5-10 min mobility.",
+              "prescription": "10 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "45 min optional easy bike.",
+              "prescription": "45 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 12,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "35 min easy bike; Strength B.",
+              "prescription": "35 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "2 km easy run, conversational pace.",
+              "prescription": "2 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "7 km easy long run; 5-10 min mobility.",
+              "prescription": "7 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "35 min optional easy bike.",
+              "prescription": "35 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 13,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "5 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "40 min easy bike; Strength B.",
+              "prescription": "40 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run, conversational pace.",
+              "prescription": "3 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "10 km easy long run; 5-10 min mobility.",
+              "prescription": "10 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "40 min optional easy bike.",
+              "prescription": "40 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 14,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "5 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "42 min easy bike; Strength B.",
+              "prescription": "42 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "4 km easy run, conversational pace.",
+              "prescription": "4 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "10 km easy long run; 5-10 min mobility.",
+              "prescription": "10 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "43 min optional easy bike.",
+              "prescription": "43 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 15,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "5 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "45 min easy bike; Strength B.",
+              "prescription": "45 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "4 km easy run, conversational pace.",
+              "prescription": "4 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "11 km easy long run; 5-10 min mobility.",
+              "prescription": "11 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "45 min optional easy bike.",
+              "prescription": "45 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 16,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "prescription": "4 km easy run (6:30-7:10/km); add 4 x 15 sec relaxed strides only if pain-free; Strength A.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "35 min easy bike; Strength B.",
+              "prescription": "35 min easy bike; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run, conversational pace.",
+              "prescription": "3 km easy run, conversational pace.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "8 km easy long run; 5-10 min mobility.",
+              "prescription": "8 km easy long run; 5-10 min mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "35 min optional easy bike.",
+              "prescription": "35 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 17,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km total: 2 km warm-up, 4 x 1 min controlled fast (approx 4:50-5:05/km) with 2 min easy, cooldown;\u2026",
+              "prescription": "6 km total: 2 km warm-up, 4 x 1 min controlled fast (approx 4:50-5:05/km) with 2 min easy, cooldown; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "4 km easy run; then Strength B.",
+              "prescription": "4 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "11 km easy long run.",
+              "prescription": "11 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "75 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "75 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 18,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km total: 2 km warm-up, 4 x 1 min controlled fast (approx 4:50-5:05/km) with 2 min easy, cooldown;\u2026",
+              "prescription": "6 km total: 2 km warm-up, 4 x 1 min controlled fast (approx 4:50-5:05/km) with 2 min easy, cooldown; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy run; then Strength B.",
+              "prescription": "5 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "12 km easy long run.",
+              "prescription": "12 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "75 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "75 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 19,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km total: 2 km warm-up, 4 x 1 min controlled fast (approx 4:50-5:05/km) with 2 min easy, cooldown;\u2026",
+              "prescription": "6 km total: 2 km warm-up, 4 x 1 min controlled fast (approx 4:50-5:05/km) with 2 min easy, cooldown; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy run; then Strength B.",
+              "prescription": "6 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "12 km easy long run.",
+              "prescription": "12 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "80 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "80 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 20,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km total easy running; skip intensity during recovery week; then Strength A (reduced load).",
+              "prescription": "6 km total easy running; skip intensity during recovery week; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "3 km easy run; then Strength B.",
+              "prescription": "3 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "9 km easy long run.",
+              "prescription": "9 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "60 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "60 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 21,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km total: 2 km warm-up, 4 x 2 min at current 5K effort (not sprinting), 2 min easy recoveries, coo\u2026",
+              "prescription": "6 km total: 2 km warm-up, 4 x 2 min at current 5K effort (not sprinting), 2 min easy recoveries, cooldown; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy run; then Strength B.",
+              "prescription": "6 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "13 km easy long run.",
+              "prescription": "13 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "75 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "75 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 22,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 4 x 2 min at current 5K effort (not sprinting), 2 min easy recoveries, coo\u2026",
+              "prescription": "7 km total: 2 km warm-up, 4 x 2 min at current 5K effort (not sprinting), 2 min easy recoveries, cooldown; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy run; then Strength B.",
+              "prescription": "6 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "14 km easy long run.",
+              "prescription": "14 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "75 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "75 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 23,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 4 x 2 min at current 5K effort (not sprinting), 2 min easy recoveries, coo\u2026",
+              "prescription": "7 km total: 2 km warm-up, 4 x 2 min at current 5K effort (not sprinting), 2 min easy recoveries, cooldown; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "7 km easy run; then Strength B.",
+              "prescription": "7 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "14 km easy long run.",
+              "prescription": "14 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "80 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "80 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 24,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km total easy running; skip intensity during recovery week; then Strength A (reduced load).",
+              "prescription": "6 km total easy running; skip intensity during recovery week; then Strength A (reduced load).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy run; then Strength B.",
+              "prescription": "5 km easy run; then Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "10 km easy long run.",
+              "prescription": "10 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "60 min easy cycling (split into 2 rides if preferred).",
+              "prescription": "60 min easy cycling (split into 2 rides if preferred).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 25,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 5 x 2 min at current 5K effort, 2 min jog, cooldown; then Strength A (shor\u2026",
+              "prescription": "7 km total: 2 km warm-up, 5 x 2 min at current 5K effort, 2 min jog, cooldown; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "4 km easy run; Strength B.",
+              "prescription": "4 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run.",
+              "prescription": "3 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "15 km easy long run.",
+              "prescription": "15 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "70 min easy bike, optional if legs are tired.",
+              "prescription": "70 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 26,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 5 x 2 min at current 5K effort, 2 min jog, cooldown; then Strength A (shor\u2026",
+              "prescription": "7 km total: 2 km warm-up, 5 x 2 min at current 5K effort, 2 min jog, cooldown; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "4 km easy run; Strength B.",
+              "prescription": "4 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "4 km easy run.",
+              "prescription": "4 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "16 km easy long run.",
+              "prescription": "16 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "70 min easy bike, optional if legs are tired.",
+              "prescription": "70 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 27,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 5 x 2 min at current 5K effort, 2 min jog, cooldown; then Strength A (shor\u2026",
+              "prescription": "7 km total: 2 km warm-up, 5 x 2 min at current 5K effort, 2 min jog, cooldown; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy run; Strength B.",
+              "prescription": "5 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "4 km easy run.",
+              "prescription": "4 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "17 km easy long run.",
+              "prescription": "17 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "70 min easy bike, optional if legs are tired.",
+              "prescription": "70 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 28,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total easy running; skip intensity during recovery week; then Strength A (short).",
+              "prescription": "7 km total easy running; skip intensity during recovery week; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "3 km easy run; Strength B.",
+              "prescription": "3 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "3 km easy run.",
+              "prescription": "3 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "12 km easy long run.",
+              "prescription": "12 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "55 min easy bike, optional if legs are tired.",
+              "prescription": "55 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 29,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 4 x 3 min at current 5K effort, 2-3 min jog, cooldown; then Strength A (sh\u2026",
+              "prescription": "7 km total: 2 km warm-up, 4 x 3 min at current 5K effort, 2-3 min jog, cooldown; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy run; Strength B.",
+              "prescription": "6 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "4 km easy run.",
+              "prescription": "4 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "17 km easy long run.",
+              "prescription": "17 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "65 min easy bike, optional if legs are tired.",
+              "prescription": "65 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 30,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 4 x 3 min at current 5K effort, 2-3 min jog, cooldown; then Strength A (sh\u2026",
+              "prescription": "7 km total: 2 km warm-up, 4 x 3 min at current 5K effort, 2-3 min jog, cooldown; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy run; Strength B.",
+              "prescription": "6 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy run.",
+              "prescription": "5 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "18 km easy long run.",
+              "prescription": "18 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "65 min easy bike, optional if legs are tired.",
+              "prescription": "65 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 31,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total: 2 km warm-up, 4 x 3 min at current 5K effort, 2-3 min jog, cooldown; then Strength A (sh\u2026",
+              "prescription": "7 km total: 2 km warm-up, 4 x 3 min at current 5K effort, 2-3 min jog, cooldown; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "7 km easy run; Strength B.",
+              "prescription": "7 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy run.",
+              "prescription": "5 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "19 km easy long run.",
+              "prescription": "19 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "60 min easy bike, optional if legs are tired.",
+              "prescription": "60 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 32,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total easy running; skip intensity during recovery week; then Strength A (short).",
+              "prescription": "7 km total easy running; skip intensity during recovery week; then Strength A (short).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "4 km easy run; Strength B.",
+              "prescription": "4 km easy run; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "4 km easy run.",
+              "prescription": "4 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "14 km easy long run.",
+              "prescription": "14 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "50 min easy bike, optional if legs are tired.",
+              "prescription": "50 min easy bike, optional if legs are tired.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 33,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "8 km total including 5 x 3 min at current 5K effort with 2 min jog; Strength A (light).",
+              "prescription": "8 km total including 5 x 3 min at current 5K effort with 2 min jog; Strength A (light).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B.",
+              "prescription": "5 km easy; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy + 4 x 15 sec strides.",
+              "prescription": "5 km easy + 4 x 15 sec strides.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "14 km easy long run.",
+              "prescription": "14 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "70 min easy cycling.",
+              "prescription": "70 min easy cycling.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 34,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "9 km total including 5 x 3 min at current 5K effort with 2 min jog; Strength A (light).",
+              "prescription": "9 km total including 5 x 3 min at current 5K effort with 2 min jog; Strength A (light).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B.",
+              "prescription": "5 km easy; Strength B.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy + 4 x 15 sec strides.",
+              "prescription": "5 km easy + 4 x 15 sec strides.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "16 km easy long run.",
+              "prescription": "16 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "65 min easy cycling.",
+              "prescription": "65 min easy cycling.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 35,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "7 km total including 4 x 2 min at current 5K effort; Strength A (light).",
+              "prescription": "7 km total including 4 x 2 min at current 5K effort; Strength A (light).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "7 km easy; Strength B (light).",
+              "prescription": "7 km easy; Strength B (light).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy with 4 x 15 sec strides.",
+              "prescription": "5 km easy with 4 x 15 sec strides.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "5 km controlled 5K time trial / race, plus 8 km combined warm-up and cooldown (13 km total).",
+              "prescription": "5 km controlled 5K time trial / race, plus 8 km combined warm-up and cooldown (13 km total).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "60 min optional easy bike.",
+              "prescription": "60 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 36,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "5 km recovery run; Strength A (light).",
+              "prescription": "5 km recovery run; Strength A (light).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B (light).",
+              "prescription": "5 km easy; Strength B (light).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "12 km easy long run.",
+              "prescription": "12 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "6 km easy run.",
+              "prescription": "6 km easy run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "45 min easy bike.",
+              "prescription": "45 min easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 37,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "9 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Strengt\u2026",
+              "prescription": "9 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B (maintenance).",
+              "prescription": "5 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy/steady, keep conversational.",
+              "prescription": "5 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "19 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "19 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "60 min optional easy bike; skip if recovery suffers.",
+              "prescription": "60 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 38,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Streng\u2026",
+              "prescription": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B (maintenance).",
+              "prescription": "5 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "6 km easy/steady, keep conversational.",
+              "prescription": "6 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "20 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "20 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "60 min optional easy bike; skip if recovery suffers.",
+              "prescription": "60 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 39,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Streng\u2026",
+              "prescription": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy; Strength B (maintenance).",
+              "prescription": "6 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "6 km easy/steady, keep conversational.",
+              "prescription": "6 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "22 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "22 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "55 min optional easy bike; skip if recovery suffers.",
+              "prescription": "55 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 40,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "9 km total easy (recovery week; no fast work); then Strength A (maintenance).",
+              "prescription": "9 km total easy (recovery week; no fast work); then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B (maintenance).",
+              "prescription": "5 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy/steady, keep conversational.",
+              "prescription": "5 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "16 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "16 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "45 min optional easy bike; skip if recovery suffers.",
+              "prescription": "45 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 41,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Streng\u2026",
+              "prescription": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy; Strength B (maintenance).",
+              "prescription": "6 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "6 km easy/steady, keep conversational.",
+              "prescription": "6 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "23 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "23 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "50 min optional easy bike; skip if recovery suffers.",
+              "prescription": "50 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 42,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Streng\u2026",
+              "prescription": "10 km total including 3 x 8 min comfortably hard / threshold effort, 3 min easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "7 km easy; Strength B (maintenance).",
+              "prescription": "7 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "7 km easy/steady, keep conversational.",
+              "prescription": "7 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "24 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "24 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "50 min optional easy bike; skip if recovery suffers.",
+              "prescription": "50 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 43,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total including 3 x 2 km at current sustainable marathon effort (target 5:20/km only if approp\u2026",
+              "prescription": "12 km total including 3 x 2 km at current sustainable marathon effort (target 5:20/km only if appropriate), 1 km easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy; Strength B (maintenance).",
+              "prescription": "6 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "7 km easy/steady, keep conversational.",
+              "prescription": "7 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "25 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "25 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "45 min optional easy bike; skip if recovery suffers.",
+              "prescription": "45 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 44,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total easy (recovery week; no fast work); then Strength A (maintenance).",
+              "prescription": "12 km total easy (recovery week; no fast work); then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "5 km easy; Strength B (maintenance).",
+              "prescription": "5 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "5 km easy/steady, keep conversational.",
+              "prescription": "5 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "18 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "18 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "40 min optional easy bike; skip if recovery suffers.",
+              "prescription": "40 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 45,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total including 3 x 2 km at current sustainable marathon effort (target 5:20/km only if approp\u2026",
+              "prescription": "12 km total including 3 x 2 km at current sustainable marathon effort (target 5:20/km only if appropriate), 1 km easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy; Strength B (maintenance).",
+              "prescription": "6 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "7 km easy/steady, keep conversational.",
+              "prescription": "7 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "26 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "26 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "40 min optional easy bike; skip if recovery suffers.",
+              "prescription": "40 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 46,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total including 3 x 2 km at current sustainable marathon effort (target 5:20/km only if approp\u2026",
+              "prescription": "12 km total including 3 x 2 km at current sustainable marathon effort (target 5:20/km only if appropriate), 1 km easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "7 km easy; Strength B (maintenance).",
+              "prescription": "7 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy/steady, keep conversational.",
+              "prescription": "8 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "27 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "27 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "35 min optional easy bike; skip if recovery suffers.",
+              "prescription": "35 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 47,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total including 2 x 3 km at current sustainable marathon effort, 1 km easy between; then Stren\u2026",
+              "prescription": "12 km total including 2 x 3 km at current sustainable marathon effort, 1 km easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "8 km easy; Strength B (maintenance).",
+              "prescription": "8 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy/steady, keep conversational.",
+              "prescription": "8 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "28 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "28 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "30 min optional easy bike; skip if recovery suffers.",
+              "prescription": "30 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 48,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total easy (recovery week; no fast work); then Strength A (maintenance).",
+              "prescription": "12 km total easy (recovery week; no fast work); then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy; Strength B (maintenance).",
+              "prescription": "6 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "6 km easy/steady, keep conversational.",
+              "prescription": "6 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "20 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "20 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "30 min optional easy bike; skip if recovery suffers.",
+              "prescription": "30 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 49,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "12 km total including 2 x 3 km at current sustainable marathon effort, 1 km easy between; then Stren\u2026",
+              "prescription": "12 km total including 2 x 3 km at current sustainable marathon effort, 1 km easy between; then Strength A (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "8 km easy; Strength B (maintenance).",
+              "prescription": "8 km easy; Strength B (maintenance).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy/steady, keep conversational.",
+              "prescription": "8 km easy/steady, keep conversational.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "24 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "prescription": "24 km long run at easy effort; cap near 3 hours, shortening distance if needed.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "25 min optional easy bike; skip if recovery suffers.",
+              "prescription": "25 min optional easy bike; skip if recovery suffers.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 50,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "8 km total including 3 x 5 min at marathon effort; Strength A very light.",
+              "prescription": "8 km total including 3 x 5 min at marathon effort; Strength A very light.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "8 km easy; no heavy strength.",
+              "prescription": "8 km easy; no heavy strength.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "8 km easy.",
+              "prescription": "8 km easy.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "16 km easy long run (shorten if fatigue persists).",
+              "prescription": "16 km easy long run (shorten if fatigue persists).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "25 min optional recovery bike.",
+              "prescription": "25 min optional recovery bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 51,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "6 km easy with 4 x 20 sec relaxed strides; mobility only.",
+              "prescription": "6 km easy with 4 x 20 sec relaxed strides; mobility only.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "6 km easy.",
+              "prescription": "6 km easy.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "6 km easy.",
+              "prescription": "6 km easy.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "10 km easy long run.",
+              "prescription": "10 km easy long run.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "20 min optional easy bike.",
+              "prescription": "20 min optional easy bike.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 52,
+      "sessions": [
+        {
+          "dayNumber": 1,
+          "defaultWeekday": "TUESDAY",
+          "sessionLabel": "Day 1",
+          "exercises": [
+            {
+              "name": "Rest / gentle mobility.",
+              "prescription": "Rest / gentle mobility.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "defaultWeekday": "THURSDAY",
+          "sessionLabel": "Day 2",
+          "exercises": [
+            {
+              "name": "20-25 min easy jog (optional; omit if fatigued).",
+              "prescription": "20-25 min easy jog (optional; omit if fatigued).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "defaultWeekday": "SATURDAY",
+          "sessionLabel": "Day 3",
+          "exercises": [
+            {
+              "name": "Rest.",
+              "prescription": "Rest.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "defaultWeekday": "SUNDAY",
+          "sessionLabel": "Day 4",
+          "exercises": [
+            {
+              "name": "15-20 min shakeout jog (optional).",
+              "prescription": "15-20 min shakeout jog (optional).",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "defaultWeekday": "MONDAY",
+          "sessionLabel": "Day 5",
+          "exercises": [
+            {
+              "name": "Marathon 42.2 km at a conservative opening pace; pursue 5:20/km only if race-readiness checks are me\u2026",
+              "prescription": "Marathon 42.2 km at a conservative opening pace; pursue 5:20/km only if race-readiness checks are met. Note: Week 52 running total is race distance only; optional shakeouts add 4-7 km.",
+              "targetWeight": null,
+              "setsReps": null,
+              "rest": null,
+              "metrics": [
+                "DISTANCE",
+                "PACE",
+                "DURATION",
+                "NOTES"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
