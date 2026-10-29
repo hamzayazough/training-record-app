@@ -18,6 +18,7 @@
 		296A7852C9B442E19D551BC4 /* TrainingRecordApp/Models/ProgramModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE22DAD304453680C25FCB /* TrainingRecordApp/Models/ProgramModels.swift */; };
 		3C654EBA4E2E432EA3E2C172 /* TrainingRecordApp/Components/ExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBFF75CBF4EFEBD748940 /* TrainingRecordApp/Components/ExerciseRow.swift */; };
 		3ECEE8114EB040A6A02C7A09 /* TrainingRecordApp/Components/HorizontalDayStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33016B27611F455C9326B5A2 /* TrainingRecordApp/Components/HorizontalDayStrip.swift */; };
+		POPGESTURECTRL0000000003 /* TrainingRecordApp/Components/NavigationPopGestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = POPGESTURECTRL0000000001 /* TrainingRecordApp/Components/NavigationPopGestureControl.swift */; };
 		3F7A63D349C546758794CB98 /* TrainingRecordApp/Components/VerticalDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93925BE45024EA190D07EB7 /* TrainingRecordApp/Components/VerticalDayList.swift */; };
 		4B6FF2A3F2D44460A33709D0 /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7B4C4001D437D87E00E0D /* TrainingRecordApp/Features/ProgramDetail/ProgramDetailView.swift */; };
 		5AC277B1FB414798ADFAFB1E /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455068377488441E95210C98 /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift */; };
@@ -72,6 +73,7 @@
 		2C48C6669E564FDAB1F9C1A4 /* TrainingRecordApp/Constants/APP_LAYOUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Constants/APP_LAYOUT.swift; sourceTree = SOURCE_ROOT; };
 		31DE74B225A54212AE47F646 /* TrainingRecordApp/Services/AtlasProgramPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Services/AtlasProgramPersistence.swift; sourceTree = SOURCE_ROOT; };
 		33016B27611F455C9326B5A2 /* TrainingRecordApp/Components/HorizontalDayStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/HorizontalDayStrip.swift; sourceTree = SOURCE_ROOT; };
+		POPGESTURECTRL0000000001 /* TrainingRecordApp/Components/NavigationPopGestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/NavigationPopGestureControl.swift; sourceTree = SOURCE_ROOT; };
 		336A0A260BB14B8D922B89FE /* TrainingRecordApp/Components/AppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Components/AppHeader.swift; sourceTree = SOURCE_ROOT; };
 		3CECDE5CD0F941EEAC87E795 /* TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/PERFORMANCE_STATUS.swift; sourceTree = SOURCE_ROOT; };
 		455068377488441E95210C98 /* TrainingRecordApp/Enums/PROGRAM_TYPE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingRecordApp/Enums/PROGRAM_TYPE.swift; sourceTree = SOURCE_ROOT; };
@@ -135,6 +137,7 @@
 				B2C3D4E5F647890123450002 /* TrainingRecordApp/Components/DayStatusBadge.swift */,
 				F41CBFF75CBF4EFEBD748940 /* TrainingRecordApp/Components/ExerciseRow.swift */,
 				33016B27611F455C9326B5A2 /* TrainingRecordApp/Components/HorizontalDayStrip.swift */,
+				POPGESTURECTRL0000000001 /* TrainingRecordApp/Components/NavigationPopGestureControl.swift */,
 				585530B151EA4800AE3BEA51 /* TrainingRecordApp/Components/PrimaryButton.swift */,
 				80047CECC99543AAB52C1CB0 /* TrainingRecordApp/Components/ProgramHeroCard.swift */,
 				E5F647890123456789AB0002 /* TrainingRecordApp/Components/ProgramSectionHeader.swift */,
@@ -303,6 +306,7 @@
 				B2C3D4E5F647890123450001 /* TrainingRecordApp/Components/DayStatusBadge.swift in Sources */,
 				3C654EBA4E2E432EA3E2C172 /* TrainingRecordApp/Components/ExerciseRow.swift in Sources */,
 				3ECEE8114EB040A6A02C7A09 /* TrainingRecordApp/Components/HorizontalDayStrip.swift in Sources */,
+				POPGESTURECTRL0000000003 /* TrainingRecordApp/Components/NavigationPopGestureControl.swift in Sources */,
 				BD7782BAEA1A4845B2937D8F /* TrainingRecordApp/Components/PrimaryButton.swift in Sources */,
 				25C8E030571841CA9C54C948 /* TrainingRecordApp/Components/ProgramHeroCard.swift in Sources */,
 				E5F647890123456789AB0001 /* TrainingRecordApp/Components/ProgramSectionHeader.swift in Sources */,

@@ -2,23 +2,28 @@ import SwiftUI
 
 struct DayDetailView: View {
     @ObservedObject var viewModel: ProgramDetailViewModel
-    let dayId: String
+    @State private var selectedDayId: String
 
-    private var day: DayRecord? {
-        viewModel.days.first(where: { $0.id == dayId })
+    init(viewModel: ProgramDetailViewModel, dayId: String) {
+        self.viewModel = viewModel
+        _selectedDayId = State(initialValue: dayId)
+    }
+
+    private var selectedDay: DayRecord? {
+        viewModel.days.first(where: { $0.id == selectedDayId })
     }
 
     var body: some View {
-        Group {
-            if let day {
-                content(for: day)
-            } else {
-                Text("Session not found")
-                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
+        TabView(selection: $selectedDayId) {
+            ForEach(viewModel.days) { day in
+                dayPage(for: day)
+                    .tag(day.id)
             }
         }
+        .tabViewStyle(.page(indexDisplayMode: .never))
         .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
-        .navigationTitle(day?.dayTitle ?? "Day")
+        .background(NavigationPopGestureControl(isEnabled: false))
+        .navigationTitle(selectedDay?.dayTitle ?? "Day")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $viewModel.feedbackExercise) { exercise in
             FeedbackBottomSheet(
@@ -31,13 +36,17 @@ struct DayDetailView: View {
         }
     }
 
-    private func content(for day: DayRecord) -> some View {
+    private func dayPage(for day: DayRecord) -> some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 if day.sessions.isEmpty {
-                    Text(viewModel.isWithinProgram(day.date) ? "Rest day — no training scheduled." : "Outside the current program block.")
-                        .font(.subheadline)
-                        .foregroundStyle(APP_COLORS.MUTED_TEXT)
+                    Text(
+                        viewModel.isWithinProgram(day.date)
+                            ? "Rest day — no training scheduled."
+                            : "Outside the current program block."
+                    )
+                    .font(.subheadline)
+                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
                 } else {
                     ProgramSectionHeader(type: viewModel.programType, sessions: day.sessions)
 
@@ -57,6 +66,7 @@ struct DayDetailView: View {
             }
             .padding(APP_LAYOUT.HORIZONTAL_PADDING)
             .padding(.bottom, 32)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }

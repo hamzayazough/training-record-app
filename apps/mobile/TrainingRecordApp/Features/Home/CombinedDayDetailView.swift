@@ -3,11 +3,11 @@ import SwiftUI
 struct CombinedDayDetailView: View {
     @ObservedObject var homeViewModel: HomeViewModel
     @StateObject private var viewModel: CombinedDayDetailViewModel
-    let dayId: String
+    @State private var selectedDayId: String
 
     init(homeViewModel: HomeViewModel, dayId: String) {
         self.homeViewModel = homeViewModel
-        self.dayId = dayId
+        _selectedDayId = State(initialValue: dayId)
         _viewModel = StateObject(
             wrappedValue: CombinedDayDetailViewModel {
                 await homeViewModel.load()
@@ -15,21 +15,21 @@ struct CombinedDayDetailView: View {
         )
     }
 
-    private var day: DayRecord? {
-        homeViewModel.day(forId: dayId)
+    private var selectedDay: DayRecord? {
+        homeViewModel.day(forId: selectedDayId)
     }
 
     var body: some View {
-        Group {
-            if let day {
-                content(for: day)
-            } else {
-                Text("Session not found")
-                    .foregroundStyle(APP_COLORS.MUTED_TEXT)
+        TabView(selection: $selectedDayId) {
+            ForEach(homeViewModel.calendarDays) { day in
+                dayPage(for: day)
+                    .tag(day.id)
             }
         }
+        .tabViewStyle(.page(indexDisplayMode: .never))
         .background(APP_COLORS.BACKGROUND.ignoresSafeArea())
-        .navigationTitle(day?.dayTitle ?? "Day")
+        .background(NavigationPopGestureControl(isEnabled: false))
+        .navigationTitle(selectedDay?.dayTitle ?? "Day")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $viewModel.feedbackExercise) { exercise in
             FeedbackBottomSheet(
@@ -42,7 +42,7 @@ struct CombinedDayDetailView: View {
         }
     }
 
-    private func content(for day: DayRecord) -> some View {
+    private func dayPage(for day: DayRecord) -> some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
                 if day.sessions.isEmpty {
@@ -66,6 +66,7 @@ struct CombinedDayDetailView: View {
             }
             .padding(APP_LAYOUT.HORIZONTAL_PADDING)
             .padding(.bottom, 32)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 

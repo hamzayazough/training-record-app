@@ -20,9 +20,21 @@ final class HomeViewModel: ObservableObject {
         errorMessage = nil
         defer { isLoading = false }
         do {
+            let from = ScheduleDateHelpers.addDays(
+                DayRecord.todayIso(),
+                days: -API_CONFIG.HOME_CALENDAR_PAST_DAYS
+            )
             async let programsTask = api.fetchPrograms()
-            async let calendarTask = api.fetchCalendar(type: .CALISTHENICS, days: API_CONFIG.HOME_CALENDAR_DAYS)
-            async let enduranceCalendar = api.fetchCalendar(type: .ENDURANCE, days: API_CONFIG.HOME_CALENDAR_DAYS)
+            async let calendarTask = api.fetchCalendar(
+                type: .CALISTHENICS,
+                from: from,
+                days: API_CONFIG.HOME_CALENDAR_DAYS
+            )
+            async let enduranceCalendar = api.fetchCalendar(
+                type: .ENDURANCE,
+                from: from,
+                days: API_CONFIG.HOME_CALENDAR_DAYS
+            )
             let (loadedPrograms, caliDays, enduDays) = try await (programsTask, calendarTask, enduranceCalendar)
             programs = loadedPrograms
             calisthenicsDays = caliDays
@@ -35,6 +47,15 @@ final class HomeViewModel: ObservableObject {
 
     func day(forId dayId: String) -> DayRecord? {
         calendarDays.first(where: { $0.id == dayId })
+    }
+
+    var homeStripDays: [DayRecord] {
+        let today = DayRecord.todayIso()
+        return Array(
+            calendarDays
+                .filter { $0.date >= today }
+                .prefix(API_CONFIG.HOME_STRIP_DAYS)
+        )
     }
 
     func subtitle(for type: PROGRAM_TYPE) -> String {

@@ -12,7 +12,7 @@ struct HomeView: View {
                         subtitle: "Your next five days at a glance"
                     )
 
-                    HorizontalDayStrip(days: viewModel.calendarDays)
+                    HorizontalDayStrip(days: viewModel.homeStripDays)
 
                     VStack(spacing: 16) {
                         NavigationLink(value: PROGRAM_TYPE.ENDURANCE) {
